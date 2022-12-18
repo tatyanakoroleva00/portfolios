@@ -116,6 +116,12 @@ body {
 .dropdown_menu a:hover {
 	background-color: rgb(248, 234, 234);
 }
+
+.right-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 .phone_img {
 	width: 20px;
 	height: 20px;
@@ -126,6 +132,16 @@ body {
 	font-size: 18px;
 	font-weight: 700;
 }
+.shopping img {
+	width: 30px;
+	height: 30px;
+	margin-left: 25px;
+	margin-top: 5px;
+	border: 3px solid rgb(255, 0, 0);
+	padding: 3px;
+	border-radius: 50%;
+}
+
 
 /*NEWSBLOCK*/
 .news_block {
@@ -150,6 +166,7 @@ body {
 	text-align: center;
 	height: 140px;
 	padding-bottom: 20px;
+	position: relative;
 }
 .logo {
 	font-family: 'Lobster', cursive;
@@ -165,6 +182,19 @@ body {
 	display: flex;
 	width: 100%;
 	justify-content: center;
+}
+.download_list_of_plants {
+	position: absolute;
+	right: 340px;
+	top: 0;
+	border: 3px solid purple;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.download_list_of_plants a {
+	text-decoration: none;
+	color: purple;
 }
 .description a{
 	text-decoration: none;
@@ -261,6 +291,7 @@ body {
   position: absolute;
   left: 45%;
   bottom: 40px;
+  background-color: rgba(128, 128, 128, 0.454);
 }
 .watch_it a {
 	text-decoration: none;
@@ -273,7 +304,7 @@ body {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 2px 2px;
   background-color: purple;
   border-radius: 50%;
   display: inline-block;
@@ -294,3 +325,72 @@ body {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.new_products_section {
+	margin-top: 50px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+.new_products {
+	background-color: white;
+	height: 480px;
+	margin-bottom: 50px;
+	position: relative;
+}
+.new_products_name {
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: purple;
+	margin-bottom: 25px;
+}
+
+.new_products_name p {
+	text-align: center;
+	font-size: 25px;
+}
+
+.carousel {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+.photo {
+	width: 290px;
+	height: 300px;
+}
+
+.photo:hover {
+	transform: scale(1.02);
+	transition: ease 0.3;
+	cursor: pointer;
+}
+.left, .right {
+	cursor: pointer;
+	position: absolute;
+	color: white;
+	font-size: 25px;
+	width: 25px;
+	padding: 16px;
+	user-select: none;
+  	background-color: rgba(128, 0, 128, 0.766);
+	border-radius: 50%;
+	top: 50%;
+	transition: 0.8s ease;
+	
+}
+.left {
+	left: 10px;
+}
+.right {
+	right: 10px;
+}
+.right:hover, .left:hover {
+	color: white;
+	background-color: rgba(0, 128, 0, 0.763);
+}
+

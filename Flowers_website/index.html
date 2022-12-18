@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="js/script.js"></script>
 
 </head>
@@ -36,9 +35,10 @@
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Отзывы</a></li>
                 </ul>
-                <div class="info_call">
+                <div class="right-nav">
                     <div><a href="tel:+79651112358"><img class="phone_img" src="images/call.png"></a>
                     <a href="tel:+79651112358" class="phone">+7(965)-111-23-58</a><span> (c 8:00 до 18:00, ежедневно)</span></div>
+                    <div class="shopping"><a href="#"><img src="images/shoppingcart.png" title="Сделать заказ"></a></div>
                 </div>
             </section>
         </div>
@@ -53,40 +53,68 @@
                 <a href="#"><span class="circle"></span> Овощи</a>
                 <a href="#"><span class="circle"></span> Корни</a>
             </div>
+            <div class="download_list_of_plants">
+                <a href="/doc/catalogue .docx" download="catalogue"><img src="images/download.png">
+                <span>Товары в наличии</span></a>
+            </div>
         </section>
     </header>
     <main class="main">
         <!--Slideshow container-->
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade" style = "display: block">
-              <img class="photo_gallery" src="images/photo1.jpg">
-              <div class="watch_it"><a target="_blank" href="#">Посмотреть</a></div>
-            </div>
-          
-            <div class="mySlides fade">
-              <img class="photo_gallery" src="images/photo2.jpg">
-              <div class="watch_it"><a target="_blank" href="#">Посмотреть</a></div>
-            </div>
-          
-            <div class="mySlides fade">
-                <img class="photo_gallery" src="images/photo3.jpg">
+        <section class="slideshow_section">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade" style = "display: block">
+                <img class="photo_gallery" src="images/photo1.jpg">
                 <div class="watch_it"><a target="_blank" href="#">Посмотреть</a></div>
-              </div>
+                </div>
+            
+                <div class="mySlides fade">
+                <img class="photo_gallery" src="images/photo2.jpg">
+                <div class="watch_it"><a target="_blank" href="#">Посмотреть</a></div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <img class="photo_gallery" src="images/photo3.jpg">
+                    <div class="watch_it"><a target="_blank" href="#">Посмотреть</a></div>
+                </div>
 
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
-          
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <section class="new_products_section">
+            <div class="container">
+                <div class="new_products">
+                    <div class="new_products_name">
+                        <p>НОВИНКИ</p>
+                    </div>
+                    <ul class="carousel">
+                        <li><img class="photo" src="images/1.jpg"></li>
+                        <li><img class="photo" src="images/2.jpg"></li>
+                        <li><img class="photo" src="images/3.jpg"></li>
+                        <li><img class="photo" src="images/4.jpg"></li>
+                        <li><img class="photo" src="images/5.jpg" style="display: none"></li>
+                        <li><img class="photo" src="images/6.jpg" style="display: none"></li>
+                        <li><img class="photo" src="images/7.jpg" style="display: none"></li>
+                        <li><img class="photo" src="images/8.jpg" style="display: none"></li>
+                    </ul>
+                    <div>
+                        <a class="left" onclick="addSlides(-1)" style="display: none">&#10094;</a>
+                        <a class="right" onclick="addSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 </main>
 
