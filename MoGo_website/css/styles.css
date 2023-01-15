@@ -130,7 +130,10 @@ h3::after {
     width: 60px;
     height: 3px;
     background-color: #f38181;
-    margin: 42px auto 48px auto;
+    margin-top: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 h5 {
     font-family: Montserrat, sans-serif;
@@ -338,7 +341,7 @@ h6 {
 }
 .services_second_line {
     padding-top: 48px;
-    padding-bottom: 124px;
+    padding-bottom: 120px;
 }
 .services_box {
     width: 335px;
@@ -350,3 +353,40 @@ h6 {
 .services_box h6 {
     margin-left: 60px;
 } 
+
+    /*PAGE 4*/
+.fourth_page {
+    height: 815px;
+    background: url("../img/fon2.png") no-repeat bottom right / cover;
+}
+.fourth_page h4 {
+    padding-top: 108px;
+}
+.display_phone {
+    margin-top: -48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.display {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 580px;
+}
+.phone {
+    position: absolute;
+    right: 240px;
+    top: 220px;
+    height: 435px;
+}
+
+.fifth_page {
+    padding-top: 64px;
+}
+.fifth_page h6 {
+    padding-bottom: 94px;
+}
