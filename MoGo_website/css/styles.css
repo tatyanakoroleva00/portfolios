@@ -1,21 +1,52 @@
-html {
-    box-sizing: border-box;
-    font-size: 16px;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-margin: 0;
-padding: 0;
-font-weight: normal;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
+body {
+	line-height: 1;
+}
 ol, ul {
-list-style: none;
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
                             /*Coding*/
 .banner {
-    background: url(../img/main.png) no-repeat center top / cover;
-    height: 980px;
+    background: url(../img/main1.png) left bottom;
+    background-position: cover;
+    height: 1000px;
 }
 .container {
     width: 1200px;
@@ -28,7 +59,7 @@ list-style: none;
     color: white;
     padding-top: 29px;
     padding-bottom: 12px;
-    margin-bottom: 130px;
+    margin-bottom: 94px;
 }
 .logo {
     font-size: 30px;
@@ -52,14 +83,11 @@ nav a {
     text-transform: uppercase;
     font-size: 14px;
 }
-
 #active_link {
     border-bottom: 3px solid #fce38a;
     color: #fce38a;
     padding-bottom: 12px;
 }
-
-
 .icon:hover {
     cursor: pointer;
 }
@@ -75,21 +103,23 @@ nav a {
 .header {
     color: white;
     width: 850px;
-    text-align: center;
     margin: 0 auto;
+}
+.text_center {
+    text-align: center;
 }
 h2 {
     font-family: 'Kaushan Script', sans-serif;
     font-style: cursive;
     font-size: 72px;
-    margin-bottom: 45px;
+    margin-bottom: 63px;
 }
 h1 {
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     font-size: 150px;
     text-transform: uppercase;
-    line-height: 140px;
+    line-height: 0.9;
 }
 .header:after {
     content:'';
@@ -101,7 +131,9 @@ h1 {
 }
 .nav_button {
     border: 3px solid white;
-    margin: 50px auto 90px auto;
+    margin-bottom: 157px;
+    margin-right: auto;
+    margin-left: auto;
     width: 160px;
 }
 .nav_button p {
@@ -127,8 +159,6 @@ h1 {
     height: 3px;
     width: 280px;
 }
-
-
 .bottom_banner div {
     width: 280px;
     display: flex;
@@ -163,7 +193,6 @@ h1 {
     background-color: red;
     height: 3px;
     width: 70px; 
-    margin-bottom: 25px;
 }
 #white_line{
     display: block;
@@ -171,7 +200,81 @@ h1 {
     background-color: white;
     height: 3px;
     width: 210px;
-    margin-top: -28px;
+    margin-top: -3px;
     margin-left: 70px;
 }
-    
+
+            /*SECOND PAGE*/
+.second_page {
+    background-color:#ffffff;
+    padding-top: 93px;
+}
+h4 {
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 24px;
+    padding-bottom: 24px;
+}
+h3 {
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3::after {
+    content:'';
+    display:block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 42px auto 48px auto;
+}
+h6 {
+    font-size: 15px;
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    width: 954px;
+    margin: 0 auto;
+    padding-bottom: 92px;
+}
+.photo_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+.photo_1, .photo_2, .photo_3 {
+    width: 380px;
+}
+.photo_1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.pic_back {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.pic_top {
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+}
+.users {
+    position: absolute;
+    height: 24px;
+    width: 33px;
+    left: 173px;
+    top: 104px;
+}
+.photo_1 p {
+    position: absolute;
+    color: white;
+    left: 130px;
+    top: 138px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+}
+
