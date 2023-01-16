@@ -533,3 +533,67 @@ h6 {
     font-family: 'Kaushan Script', sans-serif;
     font-size: 24px;
 }
+
+.sixth_page h6 {
+    width: 926px;
+    margin: 0 auto 95px auto;
+}
+.team_gallery {
+    display: flex;
+    justify-content: space-between;
+}
+.team_gallery_left {
+    position: relative;
+    left: 0;
+    top: 0;
+} 
+.left_pic_back{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.left_pic_top {
+    position: absolute;
+    top: -10px; 
+    left: -10px;
+}
+.social_net_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 200px;
+    left: 79px;
+    width: 224px;
+    position: absolute;
+}
+
+.instagram, .pinterest, .twitter, .facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fce38a;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+.facebook {
+    background-color: #f38181;
+}
+.picture_capture {
+    margin-top: 25px;
+    text-align: center;
+    padding-bottom: 95px;
+}
+.picture_capture p:first-child {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+.picture_capture p:last-child {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #acacac;
+}
