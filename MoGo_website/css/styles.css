@@ -597,3 +597,210 @@ h6 {
     font-style: italic;
     color: #acacac;
 }
+
+        /*Banner logos*/
+.banner_logos {
+    background-color: #f8f8f8;
+    margin-bottom: 110px;
+}
+.banner_logos_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+.seventh_page h6 {
+    margin-bottom: 110px;
+}
+.seventh_page_photo_gallery {
+    height: 782px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.first_col_photo_gal, .second_col_photo_gal, .third_col_photo_gal, .fourth_col_photo_gal {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.second_col_photo_gal {
+    position: relative;
+}
+.info_on_pic {
+    position: absolute;
+    left: 155px;
+    bottom: 140px;
+    text-align: center;
+    color: white;
+}
+.info_on_pic img {
+    margin-bottom: 20px;
+}
+.info_on_pic p {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.info_on_pic p:last-child {
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    text-transform: none;
+}
+.banner_quote_2 {
+    height: 442px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.quote_box2 img {
+    border: none;
+    margin-right: 0;
+    padding: 0;
+}
+.quote_box2 .quote_box_inner {
+    margin-left: 30px;
+    padding-top: 40px;
+}
+.quote_box2 #quote {
+    font-size: 24px;
+}
+
+        /*Page 8*/
+.eighth_page {
+    background: url('../img/fon3.png');
+    padding-top: 110px;
+    padding-bottom: 50px;
+}
+.what_people_say_table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 39px;
+}
+.left_bottom_table, .left_top_table, .right_top_table, .right_bottom_table {
+    width: 515px;
+    display: flex;
+    flex-direction: row;
+}
+.what_people_say_table img {
+    float: left; 
+    margin-right: 30px;
+}
+.what_people_say_description p:first-child {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.what_people_say_description p:nth-child(2) {
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #979797;
+}
+.what_people_say_description p:nth-child(2)::after {
+    display: block;
+    content: '';
+    background-color: red;
+    height: 3px;
+    width: 70px; 
+    margin-top: 25px;
+    margin-bottom: 19px;
+}
+.what_people_say_description p:last-child {
+    margin-bottom: 70px;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #999999;
+}
+
+            /*Page 9*/
+.ninth_page {
+    padding-top: 112px;
+    margin-bottom: 120px;
+}
+.ninth_page_table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ .page9_left_col, .page9_center_col, .page9_right_col {
+    display: flex;
+    flex-direction: column;
+    width: 392px;
+}  
+.page9_left_col div:first-child,
+.page9_center_col div:first-child,
+.page9_right_col div:first-child {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.page9_back_img {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.rectangle_date {
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+}
+.rec_date {
+    position: absolute;
+    left: 10px; 
+    bottom: 26px; 
+    text-align: center;
+    color: white;
+}
+.page9_number {
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.page9_month {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+}
+.page9_pic_description p:first-child {
+    margin-top: 20px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.page9_pic_description p:last-child {
+    margin-top: 20px;
+    color: #b6b6b6;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.page9_pic_description p:last-child::after {
+    content:'';
+    display: block;
+    background-color: #e5e5e5;
+    height: 1px;
+    width: 97%;
+    margin-top: 22px;
+    margin-bottom: 21px;
+}
+.views_number, .number_comments {
+    color: #cccccc;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 6px;
+    margin-right: 15px;
+}
+.speech_buble {
+    margin-bottom: -3px;
+}
