@@ -55,7 +55,7 @@ table {
 .navbar {
     display: flex;
     justify-content: space-between;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     padding-top: 29px;
     padding-bottom: 12px;
@@ -101,7 +101,7 @@ nav a {
 
                 /*HEADER*/
 h1 {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 150px;
     text-transform: uppercase;
@@ -119,7 +119,7 @@ h4 {
     padding-bottom: 24px;
 }
 h3 {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
@@ -136,7 +136,7 @@ h3::after {
     margin-bottom: 48px;
 }
 h5 {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -145,7 +145,7 @@ h6 {
     font-size: 15px;
     color: rgb(153, 153, 153);
     line-height: 1.6;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .header {
     color: white;
@@ -173,7 +173,7 @@ h6 {
 .nav_button p {
     color: white;
     text-transform: uppercase;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
@@ -200,7 +200,7 @@ h6 {
 }
 .bottom_banner p, .bottom_banner span {
     color: white;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .bottom_banner span {
     font-weight: bold;
@@ -285,7 +285,7 @@ h6 {
     color: white;
     left: 130px;
     top: 138px;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
@@ -312,14 +312,14 @@ h6 {
     border-right: 1px solid #b5eae0; 
 }
 .statistics_number {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 72px;
     padding-top: 89px;
     padding-bottom: 15px;
 }
 .statistics_topic {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 14px;
 }
@@ -585,7 +585,7 @@ h6 {
     padding-bottom: 95px;
 }
 .picture_capture p:first-child {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 500;
@@ -637,13 +637,13 @@ h6 {
     margin-bottom: 20px;
 }
 .info_on_pic p {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 16px;
 }
 .info_on_pic p:last-child {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: 300;
     text-transform: none;
@@ -691,14 +691,14 @@ h6 {
     margin-right: 30px;
 }
 .what_people_say_description p:first-child {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 15px;
 }
 .what_people_say_description p:nth-child(2) {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-size: 15px;
     color: #979797;
@@ -714,7 +714,7 @@ h6 {
 }
 .what_people_say_description p:last-child {
     margin-bottom: 70px;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 1.6;
     color: #999999;
@@ -760,19 +760,19 @@ h6 {
     color: white;
 }
 .page9_number {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: bold;
 }
 .page9_month {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-style: italic;
     font-weight: 300;
 }
 .page9_pic_description p:first-child {
     margin-top: 20px;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -780,7 +780,7 @@ h6 {
 .page9_pic_description p:last-child {
     margin-top: 20px;
     color: #b6b6b6;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 1.6;
 }
@@ -795,7 +795,7 @@ h6 {
 }
 .views_number, .number_comments {
     color: #cccccc;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
     margin-left: 6px;
@@ -830,7 +830,7 @@ h6 {
 }
 .map_inner_box p {
     color: #f38181;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 24px;
@@ -846,6 +846,155 @@ h6 {
 }
 /*LAST PAGE*/
 .last_page {
+    margin-top: -5px;
     padding-top: 74px;
+    background-color: #f8f8f8;
+}
+.last_page_table {
+    padding-bottom: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.last_page_left_col, .last_page_central_col, .last_page_right_col {
+    display: flex;
+    flex-direction: column;
+}
+.last_page_left_col {
+    width: 450px;
+}
+.last_page_left_col p:first-child {
+    color: #cccccc;
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 43px;
+}
+.last_page_left_col p:nth-child(2) {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+.last_page_left_col p:nth-child(3) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}   
+.last_page_left_col p:nth-child(3) span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.last_page_left_col p:nth-child(3)::after {
+    margin-top: 18px;
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin-bottom: 20px;
+}
+.follow_us_social_nets ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 315px;
+    margin-bottom: 40px;
+}
+.follow_us_social_nets ul li:first-child {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #ababab;
+}
+.email_box {
+    width: 230px; 
+    height: 40px;
+    border: 1px solid #e7e7e7;
+}
+.email_box::placeholder {
+    font-style: italic;
+    color: #dfdfdf;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-left: 13px;
+}
+.subscribe_button {
+    height: 42px;
+    border: none;
+    width: 150px;
+    background-color: #95e1d3;
+    margin-left: -5px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
 }
 
+/*central col*/
+.last_page_central_col p:first-child,
+.last_page_right_col p:first-child {
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.last_page_central_col img {
+    float: left;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    width: 120px;
+}
+.col_text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+.col_date {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #b1b1b1;
+}
+
+/*Col 3*/
+.instagram_pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 270px;
+    margin-bottom: 20px;
+}
+.last_page_right_col p:last-child {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #646464;
+    font-style: italic;
+}
+
+/*FOOTER*/
+.footer {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.footer span {
+    color: #f38888;
+}
