@@ -1,23 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  ul {
-    list-style: none;
-  }
-  body {
+body {
     color: rgba(255, 255, 255, 0.812);
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Neue', sans-serif;
     background-color: rgba(28, 29, 37, 255);
+    cursor: default;
   }
   .page_one {
-    margin-bottom: 200px;
-  }
-  .navbar {
-    width: 100%;
-    position: fixed;
-    top: 0;
+    height: 100vh;
   }
   .container {
     width: 1200px;
@@ -25,29 +13,36 @@
   }
   .navbar_wrap {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: flex-end;
-    margin-top: 40px;
+    width: 100%;
+    height: 100px;  
   }
   .menu {
+    position: fixed;
+    top: 35px;
     display: flex;
     align-items: center;
   }
-  .menu > li {
-    display: flex;
-    flex: stretch;
-    font-size: 20px;
+  .menu div {
     font-weight: bold;
-    margin-right: 50px;
   }
-  .menu > li:last-child {
-    margin-right: 0px;
-  }
-  .menu > li > a {
+  .menu > div > a {
     text-decoration: none;
     color: white;
     opacity: 0.7;
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: 700;
   }
-  .menu > li > a:hover {
+/*   .menu > div:first-child > a {
+    margin-left: 0px;
+    padding: 3px 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+  } */
+  .menu > div > a:hover {
     opacity: 1;
     text-shadow: 1px 1px 15px white;
   }
@@ -60,36 +55,99 @@
   #mailme {
     filter: invert(1);
     height: 36px;
-    width: 110%;
-    margin-top: 5px;
   }
 
+
   /*HEADER*/
+  .vertical_line_left {
+    position: fixed;
+    left: 50px;
+    bottom: 0px;
+    display: block;
+    content: '';
+    width: 1px;
+    background-color: #00ffff;
+    height: 100px;
+ }
   .header_wrap {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 250px;
 }
-.header_leftcol {
-    display: flex;
-    flex-direction: column;
-}
+
   h1 {
-    font-size: 70px;
+    font-size: 80px;
     color: white;
     margin-bottom: 25px;
-    margin-left: 50px;
+    font-weight: 700;
   }
   h2 {
     color: rgb(72,101,206);
-    font-weight: 200;
-    margin-left: 62px;
+    font-weight: 700;
+    margin-left: 12px;
     margin-bottom: 25px;
+    font-size: 40px;
   }
+  .header_content p {
+    margin-left: 12px;
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+
   .header_button {
     margin-top: 15px;
-    margin-left: 50px;
+    display: flex;
+    margin-bottom: 200px;
+  }
+
+  .hire_me {
+    background-image: linear-gradient(to bottom right, #e03d37, #e15b44);
+    border: none;
+    padding: 5px 15px;
+    margin-left: 12px;
+    border-radius: 5px;
+  /*   box-shadow: 1px 1px 15px #ef3636; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .downloadCV {
+    border: 3px solid #e03d37;
+    padding: 5px 15px;
+    border-radius: 5px;
+    /* box-shadow: 1px 1px 15px #ef3636; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+  }
+
+  .downloadCV a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+ }
+
+.download_icon img {
+  height: 28px;
+  margin-left: 10px;
+  margin-top: 5px;
+  filter: invert(1);
+}
+.bottom_image {
+  margin: 0 auto;
+}
+
+  /* 
+  .header_button {
+    margin-top: 15px;
   }
  .downloadCV {
     background-image: linear-gradient(to bottom right, #e03d37, #e15b44);
@@ -105,7 +163,7 @@
  .downloadCV a {
     text-decoration: none;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
  }
  .downloadCV:hover {
@@ -115,25 +173,19 @@
     height: 28px;
     margin-left: 10px;
     margin-top: 5px;
- }
- .vertical_line_left {
-    position: fixed;
-    bottom: 0px;
-    display: block;
-    content: '';
-    width: 1px;
-    background-color: #00ffff;
-    height: 100px;
- }
+    filter: invert(1);
+  }
+ */
 
- /*RIGHT COL*/
-.header_rightcol {
+ /*RIGHT*/
+.header_right {
     display: flex;
     position: fixed;
     bottom: 0px;
     right: 50px;
     flex-direction: column;
     width: 30px;
+    align-items: center;
 }
 .vertical_line_right {
     display: block;
@@ -141,10 +193,8 @@
     width: 1px;
     background-color: white;
     height: 270px;
-    margin-left: 30px;
  }
 .right_side_icons {
-    margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -160,23 +210,78 @@
     filter: invert(1);
 }
 
+
         /*ABOUT ME*/
-.about_me_inner_container {
-    margin-left: 100px;
-    height: 580px;
+.about_me {
+  height: 100vh;
+}       
+.about_me_content {
+  padding-top: 150px;
+  margin-left: 100px;
+  width: 700px;
+  margin-bottom: 200px;
 }
+.about_me_content img {
+  float: left;
+  width: 200px;
+  margin-right: 50px;
+  padding: 5px;
+  margin-left: 7px;
+  border: 2px solid rgb(72,101,206, 0.3);
+}
+
 h3 {
-    font-size: 28px;
-}
-.about_me_page {
-    width: 100%;
-    height: 420px;
+    font-size: 36px;
+    font-weight: 700;
 }
 .about_me_letter {
-    width: 500px;
-    height: 500px;
     margin-top: 40px;
-    line-height: 1.6;
     padding: 10px;
     color:rgba(255, 255, 255, 0.812);
+    font-size: 25px;
+}
+.about_me_letter > p > span {
+  color: rgb(81, 118, 254);
+  font-weight: 500;
+  font-weight: bold;
+}
+
+  /*Qualifications*/
+.qualifications {
+  height: 100vh;
+  padding-top: 150px;
+}
+.qualifications_wrapper {
+  margin-top: 150px;
+  height: 800px;
+  width: 100%;
+  background-color: rgba(28, 29, 37, 255);
+  border: 1px solid white;
+  margin-top: 40px;
+}
+.study_work_table {
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  margin: 50px auto 0 auto;
+}
+.study_work {
+  height: 500px;
+  width: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-right: 1px solid black;
+}
+.study_work_description {
+  height: 500px;
+  background-color: white;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+#text1, #text2, #text3 {
+  display: none;
+  color: black;
 }
