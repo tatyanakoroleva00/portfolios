@@ -55,8 +55,8 @@ body {
   #mailme {
     filter: invert(1);
     height: 36px;
+    margin-top: 10px;
   }
-
 
   /*HEADER*/
   .vertical_line_left {
@@ -229,7 +229,6 @@ body {
   margin-left: 7px;
   border: 2px solid rgb(72,101,206, 0.3);
 }
-
 h3 {
     font-size: 36px;
     font-weight: 700;
@@ -256,7 +255,7 @@ h3 {
   height: 800px;
   width: 100%;
   background-color: rgba(28, 29, 37, 255);
-  border: 1px solid white;
+  border: 2px solid rgb(72,101,206, 0.3);
   margin-top: 40px;
 }
 .study_work_table {
@@ -264,24 +263,37 @@ h3 {
   flex-direction: row;
   width: 900px;
   margin: 50px auto 0 auto;
+  background-color: transparent;
 }
 .study_work {
   height: 500px;
-  width: 200px;
-  background-color: white;
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  border-right: 1px solid black;
+  margin-right: 25px;
 }
 .study_work_description {
-  height: 500px;
-  background-color: white;
-  width: 800px;
   display: flex;
   flex-direction: column;
+  border-left: 1px solid #00ffff;
+  padding-left: 40px;
+}
+.study_work button {
+  border: 2px solid rgb(72,101,206, 0.3);
+  color: rgba(255, 255, 255, 0.812);
+  font-size: 25px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(72,101,206, 0.3);
 }
 #text1, #text2, #text3 {
   display: none;
-  color: black;
+  color: rgba(255, 255, 255, 0.812);
+  font-weight: bold;
+  font-size: 25px;
+  
+}
+#text1 li {
+  list-style-type:square;
 }
