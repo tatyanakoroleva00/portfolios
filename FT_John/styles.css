@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 body {
-    width: 1152px;
+    max-width: 1152px;
     margin: 0 auto;
     font-family: 'Heebo', sans-serif;
     border: 1px solid red;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.4; 
 }
 h1 {
     font-size: 44px;
@@ -26,44 +26,38 @@ h3 {
     font-weight: 700;
 }
 .container {
+    margin: 0 auto;
     margin-left: 146px;
     margin-right: 60px;
-    border: 1px solid red;
 }
-.nav {
+.navwrap {
     height: 96px;
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
 }
-nav ul {
-    margin-top: -20px;
-}
-nav > ul > li {
-    display: inline;
-}
-nav a {
+.navwrap__links a {
     text-decoration: none;
     color: black;
     font-size: 20px;
     font-weight: 700;
     margin-left: 40px;
 }
-.part1 {
+.about-me {
     padding-top: 112px;
     padding-bottom: 68px;
 }
-.part1_inner img {
+.about-me__inner img {
     float: right;
     margin-right: 90px;
     margin-left: 115px;
     width: 243px;
 }
-.part1_inner h6 {
+.about-me__inner h6 {
     margin-top: 39px;
 }
-.part1_inner button {
+.button-download-resume {
     margin-top: 37px;
     background-color: #FF6464;
     width: 209px;
@@ -75,25 +69,25 @@ nav a {
     border: none;
 }
 /*Recent posts*/
-.recent_posts {
+.recent-posts {
     background-color: #EDF7FA;
 }
-.recent_posts_block {
+.recent-posts__inner {
     display: flex;
 }
-.recent_posts_col1 {
+.recent-posts__left-col{
     width: 418px;
     margin-right: 19px;
 }
-.recent_posts_col2 {
+.recent-posts__right-col {
     width: 418px;
 }
-.recent_posts_col1_caption {
+.left-col-recent-posts__caption {
     font-weight: 400;
     font-size: 22px;
     line-height: 2.7;
 }
-.recent_posts_box {
+.recent-posts-box {
     background-color: white;
     padding-left: 24px;
     padding-top: 25px;
@@ -101,19 +95,19 @@ nav a {
     margin-bottom: 40px;
     height: 294px;
 }
-.recent_posts_heading {
+.recent-posts-box__heading {
     margin-bottom: 17px;
     line-height: 1.5;
 }
-.recent_posts_box div {
+.recent-posts-box div {
     margin-bottom: 11px;
     line-height: 1.5;
     font-size: 18px;
 }
-.recent_posts_box span {
+.recent-posts-box span {
     display: inline-block;
 }
-.right_line {
+.right-line {
     content: '';
     display: block; 
     width: 1px;
@@ -122,13 +116,13 @@ nav a {
     margin-left: 20px;
     margin-right: 20px;
 }
-.recent_posts_col2_caption {
+.right-col-recent-posts__caption {
     display: flex;
     align-items: center;
     justify-content: end;
     height: 59px;
 }
-.recent_posts_col2_caption a {
+.right-col-recent-posts__caption a {
     text-decoration: none;
     color: #00A8CC;
     padding-top: 18px;
