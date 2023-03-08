@@ -1,17 +1,13 @@
-These are all websites (personal and made with free templates *FT). 
-!Important Placed in the order of creation. 
-
 Personal websites:
 
-01. Flowers_website - My first personal website (I modified it in the next same-named file). I added a new design, got rid of some animated hover effects, turn the visual map into a link. Time: 2days.
-01-2. Flower_website_new_design - The second attempt of the same website. Colours are softer.
-*My_portfolio_website - the website about me as a Junior Front-end Developer & my Alter Ego. In process of creation...
+01. Flowers website. A commercial project. - In process of creation...
+02. About me. A personal page. - In process of creation...
 
-Free Templates:
+Free Templates (I found these websites on free template websites and re-created with Figma the same projects). The order corresponds to the creation order.
 
-02. MoGO website. I make it with free templates. In Photoshop, I find the necessary info about the text style, line-heights, margins and paddings, download photos pre-loaded pics. The whole website is done. It is a 10 pages website. My high speed of typing and knowledge of English + computer intuition & logics help me much. Time: 3 days. 
-03. Watches website. It was a free template website. I've already done it once with the help of some YouTube blogger. Now, it was my attempt to do it. Time: 1h30 mins.
-04. Pipernet_is_here - The website from the site Stepik.org. Free Template. Time: 2h.
-05. FT_John. Free template website. 
-*FT_LogoType  - In process of creation...
+01. MoGO website.
+02. Watches website.
+03. Pipernet is here. From the website Stepik.org.
+04. John. Free template website. 
+05. LogoType  - In process of creation...
 
