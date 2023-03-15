@@ -19,12 +19,12 @@
             <div class="container"> 
                 <section class="topnav">
                     <ul class="left-nav">
-                        <li><a href="#" class="how-to-order-link">Как заказать?</a></li>
+                        <li><a href="#" class="order-link">Как заказать?</a></li>
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">О компании</a></li>
-                        <li class="dropdown">
+                        <li class="dropdown-wrap">
                             <a href="#">Каталог</a>
-                                <div class="dropdown_menu">
+                                <div class="dropdown-menu">
                                     <a href="#" target="_blank">Астильба</a> 
                                     <a href="#" target="_blank">Гейхера</a>
                                     <a href="#" target="_blank">Гортензия</a>
@@ -39,48 +39,47 @@
                     </ul>
                     <ul class="right-nav">
                         <li><a href="tel:+79651112358"><img class="phone-img" src="images/call.png"></a></li>
-                        <li><a href="tel:+79651112358" class="number number-active-link">+7(965)-111-23-58</a><span> (c 8:00 до 18:00, ежедневно)</span></li>
+                        <li><a href="tel:+79651112358" class="number">+7(965)-111-23-58</a><span> (c 8:00 до 18:00, ежедневно)</span></li>
                         <li><a href="#"><img class="shopping-img" src="images/shoppingcart.png" title="Сделать заказ"></a></li>
                     </ul>
                 </section>
             </div>
-                <section class="news_block">
+            <section class="news-line">
                     <p><span>ВНИМАНИЕ! </span>В продаже появились <span style = "color:pink">розовые</span> лилии!</p>
-                </section>
-                <section class="logo_description">
+            </section>
+            <section class="logo-wrap">
                     <div class="logo">Всегда с Любовью <img src="images/flower.png" class="flower"></div>
-                    <div class="description">
+                    <div class="main-sales-divisions">
                         <a href="#"><span class="circle"></span> Цветы</a>
                         <a href="#"><span class="circle"></span> Овощи</a>
                         <a href="#"><span class="circle"></span> Рассада</a>
                     </div>
-                    <ul class="download_list_of_plants">
+                    <ul class="download-btn-catalogue">
                         <a href="doc/catalogue.docx" download="catalogue">
                             <li><img src="images/download.png"></li>
                             <li>Товары в наличии</li>
                         </a>
                     </ul>
-                </section>
+            </section>
     </section>
     <!--MAIN-->
-    <main class="main">
         <!--Slideshow container-->
-        <section class="slideshow_section">
-            <div class="slideshow-container">
+    <section class="big-carousel-section">
+            <div class="big-carousel-wrap">
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade" style = "display: block">
-                <img class="photo_gallery" src="images/01fon.jpg">
-                <div class="watch_it"><a target="_blank" href="#">Посмотреть</a></div>
+                <img class="photo-gallery" src="images/01fon.jpg">
+                <div class="btn-watch-it"><a target="_blank" href="#">Посмотреть</a></div>
                 </div>
             
                 <div class="mySlides fade">
-                <img class="photo_gallery" src="images/02fon.jpg">
-                <div class="watch_it"><a target="_blank" href="#">Посмотреть</a></div>
+                <img class="photo-gallery" src="images/02fon.jpg">
+                <div class="btn-watch-it"><a target="_blank" href="#">Посмотреть</a></div>
                 </div>
             
                 <div class="mySlides fade">
-                    <img class="photo_gallery" src="images/03fon.jpg">
-                    <div class="watch_it"><a target="_blank" href="#">Посмотреть</a></div>
+                    <img class="photo-gallery" src="images/03fon.jpg">
+                    <div class="btn-watch-it"><a target="_blank" href="#">Посмотреть</a></div>
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -94,14 +93,15 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-        </section>
-        <section class="new_products_section">
+    </section>
+    <!--New Products-->
+    <section class="new-products-section">
             <div class="container">
-                <div class="new_products">
-                    <div class="new_products_name">
+                <div class="new-products-wrap">
+                    <div class="new-products-name">
                         <p>НОВИНКИ</p>
                     </div>
-                    <ul class="carousel">
+                    <ul class="news-products-carousel">
                         <li><img class="photo" src="images/01.jpg"></li>
                         <li><img class="photo" src="images/02.jpg"></li>
                         <li><img class="photo" src="images/03.jpg"></li>
@@ -117,10 +117,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="company_description_section">
+    </section>
+    <section class="company-description-section">
             <div class="container">
-                <div class="company_description">
+                <div class="company-description">
                     <p>Здравствуйте!<br /><br />
                     <img src="images/pic.jpg"> Наша компания «Всегда с Любовью» была основана в 2023г. Она представляет собой семейное садоводство, хозяйство, 
                     которое на протяжении нескольких поколений занималось разведением и выращиванием цветов, овощей, ягод на собственном участке.<br /><br />
@@ -128,33 +128,31 @@
                         
                 </div>
             </div>
-
-        </section>
-    </main>
+    </section>
     <!--FOOTER-->
     <footer class="footer">
-        <section class="footer_top_section">
+        <section class="footer-top-section">
             <div class="container">
-                <div class="footer_top">
-                    <div class="footer_column_left">
-                        <p>Всегда с Любовью <span><img src="images/flower.png" class="flower"></span>
+                <div class="footer-top-wrap">
+                    <div class="footer-column footer-column--left">
+                        <p class="footer-logo">Всегда с Любовью <span><img src="images/flower.png" class="flower"></span>
                         </p>
                     </div>
-                    <div class="footer_column_center">
-                        <p class="bold_letters">Принимаем заказы по телефонам:</p>
-                        <p><a class="number-active-link" href="tel:+79651112358">+7(965)-111-23-58</a></p>
+                    <div class="footer-column footer-column--center">
+                        <p class="bold-letters">Принимаем заказы по телефонам:</p>
+                        <p><a class="footer-number number" href="tel:+79651112358">+7(965)-111-23-58</a></p>
                         <p>Ежедневно с 8:00 до 18:00</p>
-                        <p class="bold_letters">Доставляем: <span>Россия</span></p>
+                        <p class="bold-letters">Доставляем: <span>Россия</span></p>
                     </div>
-                    <div class="footer_column_right">
-                        <p class="bold_letters">Адрес компании:</p>
+                    <div class="footer-column footer-column--right">
+                        <p class="bold-letters">Адрес компании:</p>
                         <p>Россия, Московская область, городской округ Химки, посёлок аэропорта Шереметьево</p>
-                        <div style="position:relative;overflow:hidden;">
-                            <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" 
-                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a>
-                            <a href="https://yandex.ru/maps/?ll=37.418055%2C55.983275&mode=usermaps&source=constructorLink&um=constructor%3A1463d499e0af37da61b58109a31b7585029bf0a3df9113857ae8ce55742fb42f&utm_medium=mapframe&utm_source=maps&z=12" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.418055%2C55.983275&mode=usermaps&source=constructorLink&um=constructor%3A1463d499e0af37da61b58109a31b7585029bf0a3df9113857ae8ce55742fb42f&z=12" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                        <div class="footer-map">
+                                <iframe src="https://yandex.ru/map-widget/v1/?ll=37.418055%2C55.983275&mode=usermaps&source=constructorLink&um=constructor%3A1463d499e0af37da61b58109a31b7585029bf0a3df9113857ae8ce55742fb42f&z=12" 
+                                width="300" height="200" frameborder="1" allowfullscreen="true" style="position:relative;">
+                                </iframe></div>
                         <br />
-                        <p class="bold_letters">Мы в социальных сетях:</p>
+                        <p class="bold-letters">Мы в социальных сетях:</p>
                         <p><a href="#"><img src="images/vk.png" class="vk"></a></p>
 
 
@@ -162,15 +160,13 @@
                 </div> 
             </div>
         </section>
-        <section class="footer_bottom_section">
+        <section class="footer-bottom-section">
             <div class="container">
-                <div class="footer_bottom">
+                <div class="footer-bottom">
                     <p>2023, "Всегда с Любовью", интернет-магазин</p>
                 </div>
             </div>
         </section>
     </footer>
-
-    
 </body>
 </html>

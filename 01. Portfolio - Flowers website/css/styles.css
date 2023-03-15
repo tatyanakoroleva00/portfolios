@@ -59,7 +59,7 @@ a:active {
 	text-decoration: none;
 	color: black;
 }
-.how-to-order-link {
+.order-link {
 	font-weight: 700;
 	background-color: var(--active);
 	padding-top: 10px;
@@ -69,8 +69,8 @@ a:active {
 
 .left-nav li:not(first-child) {
 	border-right: 1px solid green;
-	
 }
+
 .left-nav li:not(:first-of-type) a:hover {
 	font-weight: bold;
 	padding-right: 5px;
@@ -79,12 +79,14 @@ a:active {
 
 /*DROPDOWN*/
 
-.dropdown {
+.dropdown-wrap {
 	position: relative;
 }
-.dropdown:hover .dropdown_menu {display: block;}
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
 
-.dropdown_menu {
+.dropdown-menu {
 	display: none;
 	position: absolute;
 	/* background-color: #cab3e6; */
@@ -93,12 +95,12 @@ a:active {
   	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   	z-index: 1;
 }
-.dropdown_menu a {
+.dropdown-menu a {
 	padding: 12px 16px;
 	display: block;
 	text-decoration: none;
 }
-.dropdown_menu a:hover {
+.dropdown-menu a:hover {
 	background-color: rgb(248, 234, 234);
 }
 													/*Right-nav*/
@@ -112,7 +114,10 @@ a:active {
 .number {
 	font-size: 18px;
 	font-weight: 700;
+	text-decoration: underline;
+	padding-bottom: 2px;
 }
+
 .shopping-img {
 	width: 25px;
 	height: 25px;
@@ -121,24 +126,23 @@ a:active {
 
 
 /*NEWSBLOCK*/
-.news_block {
+.news-line {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 40px;
 	width: 100%;
-	/* background-color: #59b210; */
 	background-color: var(--purple);
 }
-.news_block p {
+.news-line p {
 	color: white;
 	font-size: 18px;
 }
-.news_block span {
+.news-line span {
 	font-weight: 700;
 }
 
-.logo_description {
+.logo-wrap {
 	display: column;
 	text-align: center;
 	height: 140px;
@@ -155,22 +159,12 @@ a:active {
 	margin-left: -30px;
 	margin-bottom: -18px;
 }
-.description {
+.main-sales-divisions {
 	display: flex;
 	width: 100%;
 	justify-content: center;
 }
-.download_list_of_plants {
-	position: absolute;
-	right: 340px;
-	top: 15px;
-}
-
-.download_list_of_plants a {
-	text-decoration: none;
-	color: black;
-}
-.description a {
+.main-sales-divisions a {
 	text-decoration: none;
 	font-size: 24px;
 	margin-right: 15px;
@@ -186,19 +180,29 @@ a:active {
 	height: 2px;
 	margin-bottom: 4px;
 }
+.download-btn-catalogue {
+	position: absolute;
+	right: 340px;
+	top: 15px;
+}
+
+.download-btn-catalogue a {
+	text-decoration: none;
+	color: black;
+}
+
 
 /*MAIN PART*/
 
 
 /* Slideshow container */
-.slideshow-container {
+.big-carousel-wrap {
   width: 100%;
   position: relative;
   margin: auto;
 }
 
-
-.photo_gallery {
+.photo-gallery {
 	width: 100%;
 	height: 560px;
 }
@@ -242,7 +246,7 @@ a:active {
 }
 
 /* Caption text */
-.watch_it { 
+.btn-watch-it { 
   padding: 12px 50px;
   border: 1px solid rgba(255, 255, 255, 0.239);
   position: absolute;
@@ -250,10 +254,10 @@ a:active {
   bottom: 40px;
   background-color: rgba(128, 128, 128, 0.454);
 }
-.watch_it:hover {
+.btn-watch-it:hover {
 	opacity: 1;
 }
-.watch_it a {
+.btn-watch-it a {
 	text-decoration: none;
 	color: #f2f2f2;
   	font-size: 17px;
@@ -287,19 +291,19 @@ a:active {
   to {opacity: 1}
 }
 
-.new_products_section {
+.new-products-section {
 	/* margin-top: 50px; */
 	margin-top: 50px;
 	padding-bottom: 30px;
 }
-.new_products {
+.new-products-wrap {
 	height: 480px;
 	margin-bottom: 50px;
 	position: relative;
 	background-color: rgb(248, 234, 234);
 	border: 1px solid var(--purple);
 }
-.new_products_name {
+.new-products-name {
 	width: 100%;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -308,12 +312,12 @@ a:active {
 	color: #cab3e6;
 }
 
-.new_products_name p {
+.new-products-name p {
 	text-align: center;
 	font-size: 25px;
 }
 
-.carousel {
+.news-products-carousel {
 	padding-top: 30px;
 	padding-bottom: 50px;
 	display: flex;
@@ -359,13 +363,13 @@ a:active {
 	background-color: rgba(0, 128, 0, 0.763);
 }
 
-.company_description_section {
+.company-description-section {
 	display: flex;
 	background-color: var(--light-purple);
 	border-top: 2px solid var(--purple);
 	border-bottom: 1px solid var(--purple);
 }
-.company_description {
+.company-description {
 	display: flex;
 	flex-direction: column;
 	color: #390038;
@@ -378,7 +382,7 @@ a:active {
 	margin-bottom: 80px;
 }
 
-.company_description img {
+.company-description img {
 	width: 120px;
 	height: 120px;
 	border-radius: 50%;
@@ -390,56 +394,57 @@ a:active {
 
 /*FOOTER*/
 
-.footer_top {
+.footer-top-wrap {
 	display: flex;
 	padding: 40px;
 }
-.footer_column_left, .footer_column_center, .footer_column_right {
+.footer-column {
 	height: 400px;
 	line-height: 2;
 }
-.footer_column_left {
+.footer-column--left {
 	width: 400px;
 }
-.footer_column_left p:first-child{
+.footer-column--left p:first-child{
 	font-family: 'Lobster', cursive;
 	font-size: 45px;
 	line-height: 1;
 }
-.footer_column_left > p > .flower {
-	margin-left: -15px;
+.footer-logo .flower {
 	margin-bottom: -13px;
+	margin-left: -15px;
 	width: 25px;
 }
 	
-.footer_column_center {
+.footer-column--center {
 	padding-left: 40px;
 	width: 600px;
 }
 
-.footer_column_right {
+.footer-column--right {
 	width: 400px;
 	padding-left: 40px;
 }
-
-.bold_letters {
+.footer-map {
+	margin-top: 25px;
+	margin-bottom: -25px;
+}
+.bold-letters {
 	font-weight: 700;
 }
-.bold_letters span {
+.bold-letters span {
 	font-weight: normal;
 }
-.number-active-link {
-	text-decoration: underline;
+.footer-number {
+	font-size: 16px;
 }
 .vk {
 	width: 40px;
-
 }
-.footer_bottom_section {
+.footer-bottom-section {
 	background-color: #7a3776;
-
 }
-.footer_bottom p {
+.footer-bottom p {
 	padding-top: 20px;
 	padding-bottom: 25px;
 	color: #cab3e6;
