@@ -1,61 +1,71 @@
+:root {
+  font-size: 62.5%;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+margin: 0;
+padding: 0;
+font-weight: normal;
+}
+
+ol, ul {
+list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
 body {
+    box-sizing: border-box;
     color: rgba(255, 255, 255, 0.812);
     font-family: 'Comic Neue', sans-serif;
     background-color: rgba(28, 29, 37, 255);
     cursor: default;
   }
-  .page_one {
+  .main-page {
     height: 100vh;
+    width: 100%;
   }
   .container {
-    width: 1200px;
+    width: 120rem;
     margin: 0 auto;
-  }
-  .navbar_wrap {
+  } 
+  .navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    height: 100px;  
-  }
-  .menu {
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);padding-bottom: 1rem;
+    z-index: 1000;
     position: fixed;
-    top: 35px;
-    display: flex;
-    align-items: center;
+    top: 3.5rem;
   }
-  .menu div {
-    font-weight: bold;
+ 
+  .nav-links li {
+    display: inline;
   }
-  .menu > div > a {
-    text-decoration: none;
+  .nav-link {
     color: white;
     opacity: 0.7;
-    margin-left: 50px;
-    font-size: 25px;
+    margin-left: 5rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
-/*   .menu > div:first-child > a {
-    margin-left: 0px;
-    padding: 3px 5px;
-    border: 1px solid white;
-    border-radius: 5px;
-  } */
-  .menu > div > a:hover {
+  .nav-link:hover {
     opacity: 1;
     text-shadow: 1px 1px 15px white;
   }
-  #alterego {
+  #alter-ego {
     color: #ef3636;
   }
-  #alterego:hover {
-    text-shadow: 1px 1px 15px #ef3636;
+  #alter-ego:hover {
+    text-shadow: 1px 1px 1.5rem #ef3636;
   }
-  #mailme {
+  #mail-me {
     filter: invert(1);
-    height: 36px;
-    margin-top: 10px;
+    height: 3.6rem;
+    margin-bottom: -1rem;
   }
 
   /*HEADER*/
