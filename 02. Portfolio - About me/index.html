@@ -1,141 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tatiana Koroleva</title>
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <!-- <a target="_blank" href="https://icons8.com/icon/19044/downward-arrow">Downward Arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
     <script defer src="js/script.js"></script>
 </head>
 
 <body>
-    <section class="main-page" id="home">
-        <div class="navbar-wrap">    
-            <div class="container">
-                <div class="navbar">
-                    <ul class="nav-links">
-                        <li><a href="#home" class="nav-link">HOME</a></li>
-                        <li><a href="#aboutme" class="nav-link">ABOUT</a></li>
-                        <li><a href="#qualifications" class="nav-link">QUALIFICATIONS</a></li>
-                        <li><a href="#" class="nav-link">SKILLS</a></li>
-                        <li><a href="mailto:tatyanakoroleva00@mail.ru" class="nav-link"><img id="mail-me" src="img/mail.png.png"></a></li>
-                        <li><a href="#" id="alter-ego" class="nav-link">ALTER EGO ></a></li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-        <header class="header">
-            <div class="vertical_line_left"></div>
-            <div class="container">
-                <div class="header_wrap">
-                        <div class="header_content">
-                            <h1>TATIANA KOROLEVA</h1>
-                            <h2>Junior Front-end Developer</h2>
-                            <p> Currently, I am looking for employment opportunities in the IT field as a Trainee / Junior Front-end Developer.</p>
+
+    <section class="home" id="home">
+        <div class="home__header">
+            <nav class="home__menu">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#qualifications">PORTFOLIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="mailto:tatyanakoroleva00@mail.ru"><img id="mail-me" src="img/mail.png.png"></a></li>
+                    <li><a href="#" id="alter-ego">ALTER EGO ></a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="home__main">
+            <aside class="home-left-field"></aside>
+            <section class="home-main-field">
+                <div class="container">
+                    <div class="home-content__wrap">
+                        <div class="home-content-left-col">
+                            <div class="home-content__inner">
+                                <h1>TATIANA KOROLEVA</h1>
+                                <h2>Junior Fullstack Developer</h2>
+                                <p> Currently, I am looking for employment opportunities in the IT field as a Junior
+                                    Fullstack Developer.</p>
+                            </div>
+                            <div class="home-content__buttons">
+                                <button class="hire_me" onclick="location.href='mailto:tatyanakoroleva00@mail.ru';">HIRE
+                                    ME</button>
+                                <button class="downloadCV">
+                                    <div><a href="img/download.png.png" download>DOWNLOAD CV</a></div>
+                                    <div class="download_icon"><img src="img/download.png.png"></div>
+                                </button>
+                            </div>
+                            <div class="bottom-arrow">
+                                <img src="img/arrow.png">
+                            </div>
                         </div>
-                        <div class="header_button">
-                            <!-- <button class="downloadCV"">
-                                <div><a href="img/download.png.png" download>DOWNLOAD CV</a></div>
-                                <div class="download_icon"><img src="img/download.png.png"></div>
-                            </button> -->
-                            <button class="hire_me" onclick="location.href='mailto:tatyanakoroleva00@mail.ru';">HIRE ME</button>
-                            <button class="downloadCV">
-                                <div><a href="img/download.png.png" download>DOWNLOAD CV</a></div>
-                                <div class="download_icon"><img src="img/download.png.png"></div>
-                            </button>
+                        <div class="home-content-right-col">
+                            <img src="img/me.jpg" alt="profile picture">
                         </div>
-                        <div class="bottom_image">
-                            <img src="img/arrow.png">
-                        </div>
+                    </div>
+
                 </div>
-            </div>
-            <div class="header_right">
-                <div class="vertical_line_right"></div>
-                <div class="right_side_icons">
+            </section>
+            <aside class="home-right-field">
+                <div class="vertical-line"></div>
+                <div class="icons">
                     <a href="https://github.com/tatyanakoroleva00" target="_blank"><img id="github"
                             src="img/github.png.png"></a>
-                    <a href="https://www.linkedin.com/mwlite/in/tatianakoroleva" target="_blank"><img id="linkedin" src="img/linkedin.png.png"></a>
-                    <a href="https://www.codewars.com/users/Tatiana%20Koroleva" target="_blank"><img id="codewars" src="img/codewars.png"></a>
+                    <a href="https://www.linkedin.com/mwlite/in/tatianakoroleva" target="_blank"><img id="linkedin"
+                            src="img/linkedin.png.png"></a>
+                    <a href="https://www.codewars.com/users/Tatiana%20Koroleva" target="_blank"><img id="codewars"
+                            src="img/codewars.png"></a>
                 </div>
-            </div>
-            
-        </header> 
+            </aside>
+        </section>
     </section>
-                                                                <!--PAGE 2-->
-    <section class="about_me" id="aboutme">
-            <div class="container">
-                <div class="about_me_content">
-                    <img src="img/main1.png">
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__content">
+                <div>
                     <h3>. ABOUT ME</h3>
-                    <div class="about_me_letter">
-                        <p>Hello! My name is Tatiana.</p><br/>
-                        <p> I've been passionate about <span>languages and computers</span> since my early childhood.</p><br />
-                        <p>I have both <span>creative and practical minds</span> that help me easily to switch between different tasks.</p><br />
-                        <p>I also have a sort of <span>a computer intuition</span> which has always assisted me in having this easy
+                    <div class="about__descr">
+                        <p>Hi! My name is Tatiana. I've been passionate about <span>languages and computers</span> since
+                            my
+                            early childhood.</p>
+                        <br />
+
+                        <p>I have both <span>creative and practical minds</span> that help me easily to switch between
+                            different tasks.</p><br />
+
+                        <p>I also have a sort of <span>a computer intuition</span> which has always assisted me in
+                            having
+                            this easy
                             human-computer interaction.</p><br />
-                        <p>These days, I am applying for Junior Front-end jobs because I see myself keeping up with the development of technology in the future,
-                        and becoming a high-qualified specialist, the one who is not afraid of challengies, the one who is in constant self-enrichment and the one who is passionate about his job.
+
+                        <p>These days, I am applying for Junior Front-end jobs because I see myself keeping up with the
+                            development of technology in the future,
+                            and becoming a high-qualified specialist, the one who is not afraid of challengies, the one
+                            who
+                            is in constant self-enrichment and the one who is passionate about his job.</p>
+
                     </div>
+                    <div class="skills"></div>
                 </div>
             </div>
+
+        </div>
     </section>
-                                                                <!--PAGE 3-->
-    <section class="qualifications" id="qualifications">
+    <!--PAGE 3-->
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h3 style="text-align: center">.QUALIFICATIONS</h3>
             <div class="qualifications_wrapper">
-                    <div class="study_work_table">
-                        <div class="study_work">
-                            <button id="btn1" class="button" onclick="func"><span>Education</span></button>
-                            <button id="btn2"><span>Work Experience</span></button>
-                            <button id="btn3"><span>Languages</span></button>
-                            <button id="btn4"><span>Computer Skills</span></button>
-                            <button id="btn5"><span>Soft Skills</span></button>
-                        </div>
-                        <div class="study_work_description">
-                            <div id="text1">
-                                <ul>
-                                    <li><span>2015 - 2017 M2 (MBA) “Business, European Management, Languages”.</span> University of Orleans, France. </li>
-                                    <li><span>2009 - 2014 M2, “Diplomacy, International Relations”.</span> Moscow State Linguistic University, Russia.</li>
-                                    <li><span>English Special School</span></li>
-                                </ul>
-                            </div>
-                            <div id="text2">
-                                <ul>
-                                <li><span>No work experience in the IT domain.</span></li>
-                                <li><span>2018 – 2020, TSAR VOYAGES.</span> Senior Travel Manager. Selling travel programs to travellers from French
-                                    and English-speaking countries. Moscow, Russia.</li>
-                                <li><span>2017 – 2018, KUEHNE + NAGEL.</span> Cargo transportation manager. Ordering transport for good delivery in
-                                    Europe. Orleans, Paris, France.</li>
-                                </ul>
-                            </div>
-                            <div id="text3">
-                                <p>LANGUAGES</p><br />
-                                <ul>
-                                    <li>Russian - native;</li> 
-                                    <li>English - fluent speaker C1/C2;</li>
-                                    <li>French - fluent speaker C1/C2;</li>
-                                    <li>Spanish – B1;</li>
-                                    <li>Italian – B1;</li>
-                                    <li>German - B1;</li>
-                                    <li>Chinese - A1</li>
-                                </ul>
-                            </div>
-                            <div id="text4">
-                                <p>Basics: CSS, HTML, Java Script;</p><br/>
-                                <p>Git, VS Code, Sublime, Figma, Adobe Photoshop, Adobe Premiere Pro;</p><br/>
-                                <p>Fast Blind typewriting >500 symb/min;</p><br/>
-                                <p>Excel, Word, PowerPoint</p>
-                            </div>
-                            <div id="text5">
-                                <p>Responsible, attentive, able to work independently and in a group, both analytical and creative mindset, in constant self-development, leadership and organizational skills, capability of analyzing and solving complex problems.</p>
-                            </div>
-
-                        </div>
+                <div class="study_work_table">
+                    <div class="study_work">
+                        <button id="btn1" class="button" onclick="func"><span>Education</span></button>
+                        <button id="btn2"><span>Work Experience</span></button>
+                        <button id="btn3"><span>Languages</span></button>
+                        <button id="btn4"><span>Computer Skills</span></button>
+                        <button id="btn5"><span>Soft Skills</span></button>
                     </div>
+                    <div class="study_work_description">
+                        <div id="text1">
+                            <ul>
+                                <li><span>2015 - 2017 M2 (MBA) “Business, European Management, Languages”.</span>
+                                    University of Orleans, France. </li>
+                                <li><span>2009 - 2014 M2, “Diplomacy, International Relations”.</span> Moscow State
+                                    Linguistic University, Russia.</li>
+                                <li><span>English Special School</span></li>
+                            </ul>
+                        </div>
+                        <div id="text2">
+                            <ul>
+                                <li><span>No work experience in the IT domain.</span></li>
+                                <li><span>2018 – 2020, TSAR VOYAGES.</span> Senior Travel Manager. Selling travel
+                                    programs to travellers from French
+                                    and English-speaking countries. Moscow, Russia.</li>
+                                <li><span>2017 – 2018, KUEHNE + NAGEL.</span> Cargo transportation manager. Ordering
+                                    transport for good delivery in
+                                    Europe. Orleans, Paris, France.</li>
+                            </ul>
+                        </div>
+                        <div id="text3">
+                            <p>LANGUAGES</p><br />
+                            <ul>
+                                <li>Russian - native;</li>
+                                <li>English - fluent speaker C1/C2;</li>
+                                <li>French - fluent speaker C1/C2;</li>
+                                <li>Spanish – B1;</li>
+                                <li>Italian – B1;</li>
+                                <li>German - B1;</li>
+                                <li>Chinese - A1</li>
+                            </ul>
+                        </div>
+                        <div id="text4">
+                            <p>Basics: CSS, HTML, Java Script;</p><br />
+                            <p>Git, VS Code, Sublime, Figma, Adobe Photoshop, Adobe Premiere Pro;</p><br />
+                            <p>Fast Blind typewriting >500 symb/min;</p><br />
+                            <p>Excel, Word, PowerPoint</p>
+                        </div>
+                        <div id="text5">
+                            <p>Responsible, attentive, able to work independently and in a group, both analytical and
+                                creative mindset, in constant self-development, leadership and organizational skills,
+                                capability of analyzing and solving complex problems.</p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
