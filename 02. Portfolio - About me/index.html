@@ -8,9 +8,9 @@
     <title>Portfolio website</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- <a target="_blank" href="https://icons8.com/icon/19044/downward-arrow">Downward Arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
     <script defer src="js/script.js"></script>
 </head>
@@ -22,12 +22,12 @@
             <div class="container">
             <nav class="header__menu">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#" id="home-link">HOME</a></li>
+                    <li><a href="#about-page">ABOUT</a></li>
+                    <li><a href="#portfolio-page">PORTFOLIO</a></li>
+                    <li><a href="#blog-page">BLOG</a></li>
                     <li><a href="mailto:tatyanakoroleva00@mail.ru"><img id="mail-me" src="img/mail.png.png"></a></li>
-                    <li><a href="#" id="alter-ego">ALTER EGO ></a></li>
+                    <li><a href="#alter-ego" id="alter-ego">ALTER EGO ></a></li>
                 </ul>
             </nav>
             </div>
@@ -76,31 +76,34 @@
             </aside>
         </section>
     </section>
-    <section class="about-page" id="about">
+    <section class="about-page" id="about-page">
         <div class="container">
             <h3>. ABOUT ME</h3>
             <section class="skills__box">
                 <div class="study-work-table">
                     <div class="study_left-col">
-                        <button id="btn1" class="button" onclick="func"><span>Education</span></button>
-                        <button id="btn2"><span>Work Experience</span></button>
-                        <button id="btn3"><span>Languages</span></button>
-                        <button id="btn4"><span>Computer Skills</span></button>
-                        <button id="btn5"><span>Soft Skills</span></button>
+                        <button id="btn1" class="btn"><span>Education</span></button>
+                        <button id="btn2" class="btn"><span>Work Experience</span></button>
+                        <button id="btn3" class="btn"><span>Languages</span></button>
+                        <button id="btn4" class="btn"><span>Computer Skills</span></button>
+                        <button id="btn5" class="btn"><span>Soft Skills</span></button>
+                        <button id="btn6" class="btn"><span>Certificates</span></button>
                     </div>
                     <div class="study_right-col">
-                        <div id="text1">
+                        <div id="text1" class="text">
                             <ul>
-                                <li><span>M2 (MBA) “Business, European Management,
+                                <li><span id="fullstack">2023, FULLSTACK courses. (260H) Center "Professional"</span><br>
+                                Moscow, Russia </li>
+                                <li><span>2015, M2 (MBA) “Business, European Management,
                                         Languages”.</span><br>
                                     University of Orleans, France. </li>
-                                <li><span>M2, “Diplomacy, International
+                                <li><span>2009, M2 “Diplomacy, International
                                         Relations”.</span><br> Moscow State
                                     Linguistic University, Russia.</li>
                                 <li><span>English Special School</span></li>
                             </ul>
                         </div>
-                        <div id="text2">
+                        <div id="text2" class="text">
                             <ul>
                                 <li>*Searching for a work experience in the IT domain.</li>
                                 <li><span>2018 – 2020, TSAR VOYAGES.</span> Senior Travel Manager.
@@ -113,7 +116,7 @@
                                     Europe. Orleans, Paris, France.</li>
                             </ul>
                         </div>
-                        <div id="text3">
+                        <div id="text3" class="text">
                             <ul>
                                 <li><span>Russian</span> - native, C2</li>
                                 <li><span>English, French</span> - advanced, C1/C2;</li>
@@ -122,7 +125,7 @@
                                 <li><span>Latin</span></li>
                             </ul>
                         </div>
-                        <div id="text4">
+                        <div id="text4" class="text">
                             <p><span>CSS</span><span>HTML</span><span>Java Script</span><span>PHP</span><span>SQL</span></p><br />
                             <p><span>Git</span><span>VSCode</span><span>Sublime</span><span>Figma</span></p><br />
                             <p><span>Adobe Photoshop</span><span>Adobe Premiere Pro</span></p><br>
@@ -130,7 +133,7 @@
                             <p><span>Excel</span><span>Word</span><span>PowerPoint</span></p><br />
                             
                         </div>
-                        <div id="text5">
+                        <div id="text5" class="text">
                             <ul>
                                 <li><span>Responsible, attentive</span></li>
                                 <li>Able to work <span>independently</span>  and in a <span>group</span> </li>
@@ -142,11 +145,16 @@
                                 <li>Capability of <span>analyzing</span> and <span>solving</span> complex problems</li>
                             </ul>
                         </div>
+                        <div id="text6" class="text">
+                            <ul>
+                                <li>Hello!</li>
+                            </ul>
+                        </div>
 
                     </div>
                 </div>
                 <div class="mine-description">
-                    <p>Hi! My name is Tatiana. </p><br>
+                    <p>Hi! My name is Tatiana.</p><br>
                     <p>I've been passionate about <span>languages and computers</span> since
                         my early childhood. I have both <span>creative and practical minds</span> that help me
                         easily to switch
@@ -165,7 +173,7 @@
             </section>
         </div>
     </section>
-    <section class="portfolio-page portfolio" id="portfolio">
+    <section class="portfolio-page portfolio" id="portfolio-page">
         <div class="container">
             <h3>. PORTFOLIO</h3>
             <p class="links">
@@ -194,20 +202,20 @@
             </div>
         </div>
     </section>
-    <section class="blog-page" id="blog">
+    <section class="blog-page" id="blog-page">
         <div class="container">
             <h3>. BLOG</h3>
             <section class="blog-section">
                 <div class="post-box">
                     <img src="img/pic1.jpg" alt="">
-                    <p class="date">10 Mai 2023</p>
-                    <h4 class="title">THIS IS MY FIRST ARTICLE</h4>
+                    <p class="date">12 Mai 2023</p>
+                    <h4 class="title">THIS IS MY THIRD ARTICLE</h4>
                     <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint expedita saepe asperiores sequi illo quos necessitatibus id commodi natus! Repellat porro in dolorem voluptatem laboriosam! <a href="" class="read-more">Read more -></a></p>
                 </div>
                 <div class="post-box">
                     <img src="img/pic3.jpg" alt="">
-                    <p class="date">10 Mai 2023</p>
-                    <h4 class="title">THIS IS MY FIRST ARTICLE</h4>
+                    <p class="date">11 Mai 2023</p>
+                    <h4 class="title">THIS IS MY SECOND ARTICLE</h4>
                     <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint expedita saepe asperiores sequi illo quos necessitatibus id commodi natus! Repellat porro in dolorem voluptatem laboriosam! <a href="" class="read-more">Read more -></a></p>
                 </div>
                 <div class="post-box">
@@ -220,9 +228,9 @@
             </section>
         </div>
     </section>
-    <section class="contact-page">
+    <section class="contact-page" id="contact-page">
       <div class="container">
-        <h3>.CONTACT</h3>
+        <h3>.CONTACT ME here__</h3>
       </div>
     </section>
     <section class="bottom-section">
@@ -230,7 +238,7 @@
             <p class="copyright">COPYRIGHT @2023. ALL RIGHTS RESERVED</p>
         </div>
     </section>
-
+ 
 </body>
 
 </html>
