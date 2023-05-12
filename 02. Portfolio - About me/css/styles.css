@@ -92,18 +92,17 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
 }
-.header__menu a:not(#home-link):hover {
+ .header__menu a:not(#home-link):hover, 
+.header__menu a:not(#alter-ego):hover  {
   opacity: 1;
-  text-shadow: 1px 1px 15px white;
-} 
-
+  /* text-shadow: 1px 1px 15px white; }*/
+}
 #alter-ego {
   color: #ef3636;
   opacity: 0.9;
 }
-
 #alter-ego:hover {
-  text-shadow: 1px 1px 1.5rem #ef3636;
+  text-shadow: 1px 1px 15px #ef3636;
 }
 #mail-me {
   filter: invert(1);
@@ -112,23 +111,21 @@ body {
 }
 
 /********************LEFT and RIGHT FIELDS**********/
-.home-page > main {
-  width: 100%;
+.main-field {
+  position: relative;
 }
 
 .left-field {
   position: fixed;
-  left: 4rem;
   bottom: 0px;
   display: block;
   content: '';
   width: 1px;
   background-color: #00ffff;
   height: 10rem;
+  margin-left: -4rem;
 }
-.main-field {
-  position: relative;
-}
+
 .content__wrap {
   display: flex;
   flex-direction: row;
@@ -222,7 +219,7 @@ body {
   display: flex;
   width: 100%;
 }
-/* me.jpg*/ 
+
  .right-col img { 
   width: 50rem;
   height: 65rem;
@@ -230,21 +227,16 @@ body {
   margin-top: 10rem;
 } 
 
-/*me.png*/
-/* .home-content-right-col img { 
-  width: 60rem;
-  height: 82rem;
-  margin-top: 2rem;
-}  */
 
+/*****************RIGHT FIELD --- icons*******/
 .right-field {
   display: flex;
   position: fixed;
   bottom: 0px;
-  right: 30px;
   flex-direction: column;
   width: 30px;
   align-items: center;
+  margin-left: 162rem;
 }
 
 .vertical-line {
@@ -364,8 +356,6 @@ h3 {
 .study_left-col button:hover {
   opacity: 1;
 }
-
-
 .study_right-col {
   display: flex;
   flex-direction: column;
@@ -373,6 +363,8 @@ h3 {
   max-width: 60rem;
   width: 100%;
   font-size: 2rem;
+  overflow: auto;
+  padding-right: 0.5rem;
 }
 .study_right-col p, .study_right-col li {
   line-height: 2.9rem;
@@ -387,19 +379,19 @@ h3 {
 .study_right-col span {
   font-weight: bold;
   color: rgb(81, 118, 254);
-  opacity: 0.9;
-}
-
-.study_right-col span:hover {
   opacity: 1;
 }
 
-#text4 span {
+.computer-skills span {
   background-color: #09bc56;
   padding: 0.5rem;
   color: rgb(255, 255, 255);
   margin-right: 0.5rem;
   border-radius: 7px;
+  opacity: 0.9;
+}
+.computer-skills span:hover {
+  opacity: 1;
 }
 #text1 {
   display: inline;
@@ -413,7 +405,7 @@ h3 {
   display: none;
 }
 
-#fullstack {
+#green-span {
   color: #00ffff;
 }
 .mine-description{
