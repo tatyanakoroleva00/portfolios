@@ -95,15 +95,6 @@
     const templatesGallery = document.querySelector('#templates-gallery');
     const personalProjectsGallery = document.querySelector('#personal-projects-gallery');
 
-    
-    // function openGallery() {
-    //     if (templatesGallery.style.display === 'grid') {
-    //         templatesGallery.style.display = 'none';
-    //     } else {
-    //         templatesGallery.style.display = 'grid'
-    //     }
-    // }
-    // templateLink.addEventListener('click', openGallery);
 
     function openGalleries() {
     templateLink.addEventListener('click', ()=> {
@@ -128,9 +119,162 @@
     }
     openGalleries();
 
-    container.addEventListener('mouseover', (e)=> {
-        e.style.color = 'green';
-    });
 
+function slider1() {
 
+const prev = document.querySelector('.project-col1 .left-arrow'); 
+const next = document.querySelector('.project-col1 .right-arrow');
 
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function nextSlide() {
+    showSlides(slideIndex += 1);
+}
+next.addEventListener('click', nextSlide);
+
+function previousSlide() {
+    showSlides(slideIndex -= 1);
+}
+prev.addEventListener('click', nextSlide);
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    const slides = document.querySelectorAll('.proj1 .box');
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    for (let slide of slides) {
+        slide.style.display = 'none';
+    }
+    slides[slideIndex - 1].style.display = 'block';
+}
+}
+slider1();
+
+function slider2() {
+    const prev2 = document.querySelector('.project-col2 .left-arrow'); 
+    const next2 = document.querySelector('.project-col2 .right-arrow');
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function nextSlide() {
+    showSlides(slideIndex += 1);
+    }
+    next2.addEventListener('click', nextSlide);
+
+    function previousSlide() {
+    showSlides(slideIndex -= 1);
+    }
+    prev2.addEventListener('click', previousSlide);
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+function showSlides(n) {
+    const slides2 = document.querySelectorAll('.proj2 .box');
+
+    if (n > slides2.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides2.length;
+    }
+
+    for (let slide of slides2) {
+        slide.style.display = 'none';
+    }
+    slides2[slideIndex - 1].style.display = 'block';
+}
+}
+slider2();
+
+function slider3() {
+
+    const prev3 = document.querySelector('.project-col3 .left-arrow'); 
+    const next3 = document.querySelector('.project-col3 .right-arrow');
+    
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function nextSlide() {
+        showSlides(slideIndex += 1);
+    }
+    next3.addEventListener('click', nextSlide);
+    
+    function previousSlide() {
+        showSlides(slideIndex -= 1);
+    }
+    prev3.addEventListener('click', nextSlide);
+    
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        const slides3 = document.querySelectorAll('.project-col3 .box');
+    
+        if (n > slides3.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides3.length;
+        }
+    
+        for (let slide of slides3) {
+            slide.style.display = 'none';
+        }
+        slides3[slideIndex - 1].style.display = 'block';
+    }
+    }
+    slider3();
+
+    function slider4() {
+
+        const prev4 = document.querySelector('.project-col4 .left-arrow'); 
+        const next4 = document.querySelector('.project-col4 .right-arrow');
+        
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function nextSlide() {
+            showSlides(slideIndex += 1);
+        }
+        next4.addEventListener('click', nextSlide);
+        
+        function previousSlide() {
+            showSlides(slideIndex -= 1);
+        }
+        prev4.addEventListener('click', nextSlide);
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            const slides4 = document.querySelectorAll('.project-col4 .box');
+        
+            if (n > slides4.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides4.length;
+            }
+        
+            for (let slide of slides4) {
+                slide.style.display = 'none';
+            }
+            slides4[slideIndex - 1].style.display = 'block';
+        }
+        }
+        slider4();
