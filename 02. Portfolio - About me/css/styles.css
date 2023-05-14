@@ -663,13 +663,29 @@ h3 {
   margin: 2rem auto 0 auto;
   background-color: rgb(22, 23, 30);
   padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
 }
-.bottom-section p {
-  text-align: center;
+.bottom-section__copyright-line{
+  display: flex;
+  flex-direction: row;
   font-size: 1.5rem;
   font-weight: bold;
 }
-
+.copyright {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: 1rem;
+}
+.copyright span {
+  font-size: 2.4rem;
+  position: absolute;
+  top: -0.2rem;
+}
+.copyright-year span{
+  font-size: 2.3rem;
+}
 /***************PAGE****************************/
 
 bp {
