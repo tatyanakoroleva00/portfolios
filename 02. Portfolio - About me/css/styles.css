@@ -1,5 +1,4 @@
 :root {
-  font-size: 62.5%;
   --super-white: #fefffd;
   --white: #eaedf4;
   --white2: #edeef3;
@@ -13,6 +12,9 @@
   --dark-violet: rgb(24, 20, 30);
 }
 
+html {
+  font-size: 62.5%;
+}
 
 body,
 h1,
