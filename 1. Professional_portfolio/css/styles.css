@@ -1,3 +1,5 @@
+/* <a target="_blank" href="https://icons8.com/icon/7722/перо-с-чернилами">Перо с чернилами</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
+
 :root {
   --super-white: #fefffd;
   --white: #eaedf4;
@@ -13,7 +15,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 58%;
 }
 
 body,
@@ -90,10 +92,10 @@ body {
 .logo p {
   font-weight: bold;
   font-size: 3.5rem;
-  padding: 0rem 1.5rem 1rem 1.5rem;
-  border-bottom: 0.5px dotted rgb(255, 0, 0);
-  border-right: 0.3px dotted rgb(60, 0, 255);
-  border-bottom-right-radius: 50%;
+  padding: 0rem 1rem 0rem 1rem;
+  border: 0.2px dashed white;
+  border-radius: 10px;
+  
 }
 .header__menu {
   display: flex;
@@ -658,36 +660,36 @@ h3 {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
+.contact-form {
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+}
+.contact-form--name, 
+.contact-form--email {
+  height: 4rem;
+}
+.contact-form--textarea, 
+.contact-form--name, 
+.contact-form--email {
+  font-size: 2rem;
+  font-family: 'Comic Neue', sans-serif;
+}
 
 /******************************BOTTOM****************/
 .bottom-section {
   max-width: 170rem;
-  margin: 2rem auto 0 auto;
+  margin: -2rem auto;
   background-color: rgb(22, 23, 30);
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   display: flex;
-  justify-content: center;
-}
-.bottom-section__copyright-line{
-  display: flex;
-  flex-direction: row;
   font-size: 1.5rem;
-  font-weight: bold;
 }
-.copyright {
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  width: 1rem;
-}
-.copyright span {
-  font-size: 2.4rem;
-  position: absolute;
-  top: -0.2rem;
-}
-.copyright-year span{
-  font-size: 2.3rem;
-}
+
+
+
 /***************PAGE****************************/
 
 bp {
