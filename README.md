@@ -1,13 +1,16 @@
 Репозиторий: portfolios
 
-Personal websites:
+I. Personal websites:
+1. Professional_portfolio (My professional IT website)
+2. Online Store (An invented website. Pictures -> https://unsplash.com/fr/s/photos/splash; Icons -> https://icons8.ru/icons/set/vk)
 
+---------------------------------------
+II. Previous experience: 
 01. Flowers website. A commercial project. - In process of creation...
-02. About me. A personal page. - In process of creation...
+---------------------------------------
+Free Templates: (I learn to code -- all works are mine) 05....01 (the latest)
 
-Free Templates (I found these websites on free template websites and re-created with Figma the same projects). The order corresponds to the creation order.
-
-01. MoGO website.
+01. MoGO website. (the latest)
 02. Watches website.
 03. Pipernet is here. From the website Stepik.org.
 04. John. Free template website. 
