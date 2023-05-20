@@ -8,7 +8,7 @@
 /* <a target="_blank" href="https://icons8.com/icon/UAu0H1zs3uvE/bathtub">bathtub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */ /*Bathroom*/
 /* <a target="_blank" href="https://icons8.com/icon/124222/переговорная">Переговорная</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */ /*Living room*/
 /* <a target="_blank" href="https://icons8.com/icon/frkXBWfWFVB5/домашний-офис">Домашний офис</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */ /*Home office*/
-
+/* <a target="_blank" href="https://icons8.com/icon/85389/звезда">Звезда</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */ /*Star*/
 
 :root {
 	--very-light-purple: rgb(215, 193, 255);
@@ -32,7 +32,7 @@ html {
     /* background-color: rgba(200, 199, 199, 0.7);  */
     cursor: default;
 } 
-h1 { font-size: 2.8rem; }   /* 28px */
+
 
 a {
     text-decoration: none;
@@ -55,7 +55,16 @@ body {
     margin: 0 auto;
     position: relative;
 }
-
+h1 { font-size: 2.8rem; }   /* 28px */
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+h4 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
 
 /**************************************HEADER***************************/
 .header { 
@@ -257,7 +266,7 @@ body {
     font-size: 8rem;
     font-weight: bold;
     width: 27rem;
-    background-color: pink;
+    background-color: rgba(255, 192, 203, 0.8);
     color: rgb(58, 54, 54);
 }
 
@@ -268,7 +277,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 50rem;
+    width: 120rem;
 }
 .section2-inner2 {
     margin-top: 5rem;
@@ -285,6 +294,21 @@ body {
     grid-row-end: 3;
     background-color: rgb(243, 180, 180);
     height: 50rem;
+    position: relative;
+}
+.star {
+    position: absolute;
+    height: 2rem;
+    opacity: 0.6;
+}
+.star:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.star1 {
+    bottom: 50%;
+    right: 20%;
 }
 .box2 {
     grid-column-start: 4;
