@@ -1,3 +1,15 @@
+/* <a target="_blank" href="https://icons8.com/icon/61265/подушка">Подушка</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */ /*Подушка*/
+/* <a target="_blank" href="https://icons8.com/icon/54213/шкаф">Шкаф</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */ /*Armour*/
+/* <a target="_blank" href="https://icons8.com/icon/dKGB2z86Y1S7/домашние-тапочки">Домашние тапочки</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> *//*Cozy*/
+/* <a target="_blank" href="https://icons8.com/icon/I6O8kEOp3Bc5/лампа">Лампа</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */ /*Lighting*/
+/* <a target="_blank" href="https://icons8.com/icon/Ni1o8xxHqpmt/rose-bouquet">Rose Bouquet</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */ /*Decor*/
+/* <a target="_blank" href="https://icons8.com/icon/7546/спальня">Спальня</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */ /*Bedroom*/
+/* <a target="_blank" href="https://icons8.com/icon/aFfm63PoYbTd/кухня">Кухня</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */ /*Kitchen*/
+/* <a target="_blank" href="https://icons8.com/icon/UAu0H1zs3uvE/bathtub">bathtub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */ /*Bathroom*/
+/* <a target="_blank" href="https://icons8.com/icon/124222/переговорная">Переговорная</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */ /*Living room*/
+/* <a target="_blank" href="https://icons8.com/icon/frkXBWfWFVB5/домашний-офис">Домашний офис</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */ /*Home office*/
+
+
 :root {
 	--very-light-purple: rgb(215, 193, 255);
 	--light-purple: rgba(128, 0, 128, 0.383);
@@ -132,6 +144,7 @@ body {
 .bottom-nav__inner-nav li{
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: 1rem;
 }
 
 .dropdown-content--categories, 
@@ -140,15 +153,25 @@ body {
     flex-direction: column;
     position: absolute;
     background-color: white;
-    top: 5rem;
-    width: 15rem;
     display: none;
     z-index: 1000;
     cursor: pointer;
+    margin-top: 1rem;
+    border-top: 1px solid gray;
+}
+.dropdown-content {
+    width: 17rem;
+    padding-left: 1rem;
+    /* position: absolute;
+    left: 19%; */
+    padding: 1rem;
 }
 .dropdown-content li {    
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+}
+.dropdown-content li:hover {
+    background-color: rgba(128, 128, 128, 0.109);
 }
 
 .dropdown-menu.btn--categories .arrow-down,
@@ -158,6 +181,13 @@ body {
     height: 3rem;  
 }
 
+.lighting, .decor, .cozy, .textile, .furniture, .bedroom, .kitchen, .bathroom, 
+.living-room, .home-office {
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: -0.5rem;
+    margin-right: 1rem;
+}
 
 /****************************************************************MAIN*********************************************************************/
 .section1-inner {
@@ -170,6 +200,7 @@ body {
 .section1 .left {
     background-color:rgb(197, 197, 197);
     flex: 2;
+    position: relative;
 }
 .object-fit {
     object-fit: cover;
@@ -179,15 +210,58 @@ body {
 .section1 .right{
     background-color:rgb(255, 210, 210);
     flex: 1;
+    position: relative;
 }
-
 .division-line {
     height: 0.3rem;
-    color:rgb(197, 197, 197);
+    color:rgb(255, 255, 255);
     margin-top: 5rem;
     margin-bottom: 8rem;
 }
+.on-img-text-1 {
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+    font-weight: bold;
+    font-size: 4.5rem;
+    background-color: rgba(255, 255, 255, 0.978);
+    color: black;
+    padding: 1rem;
+}
+.on-img-btn-1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    bottom: 15%;
+    right: 10%;
+    padding: 1.5rem 3rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.9rem;
+    background-color: rgba(222, 222, 222, 0.837);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.arrow-east {
+    width: 3rem;
+}
+.on-img-btn-1:hover {
+    background-color: rgba(222, 222, 222, 1);
+}
 
+.on-img-text-2 {
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+    font-size: 8rem;
+    font-weight: bold;
+    width: 27rem;
+    background-color: pink;
+    color: rgb(58, 54, 54);
+}
+
+/********************************SECTION 2**************************************/
 .section2-inner1 {
     display: flex;
     flex-direction: column;
