@@ -490,7 +490,8 @@ h3 {
   opacity: 1;
 }
 
-.portfolio-gallery.templates {
+.portfolio-gallery.templates, 
+#personal-projects-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /*40 rem*/
   /* border: 0.2rem solid rgb(72, 101, 206, 0.8); */
@@ -502,10 +503,6 @@ h3 {
   gap: 3.5rem;
   box-sizing: border-box;
 }
-.portfolio-gallery.personal-projects {
-  display: none;
-}
-
 
 #templates-link {
   color:  #00ffff;
@@ -571,6 +568,14 @@ h3 {
   object-fit: cover;
 }
 
+.personal-proj-1 .box img {
+  width: 40rem;
+  height: 30rem;
+  object-fit:cover;
+}
+#personal-projects-gallery {
+  display: none;
+}
 
 
 /**********************ARROWS***********************/
