@@ -676,6 +676,11 @@ h3 {
 .contact-form--email {
   font-size: 2rem;
   font-family: 'Comic Neue', sans-serif;
+  padding-left: 1rem;
+}
+.contact-form--input {
+  padding: 1rem 0rem;
+  cursor: pointer;
 }
 
 /******************************BOTTOM****************/

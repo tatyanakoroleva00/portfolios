@@ -122,41 +122,42 @@
 
 function slider1() {
 
-const prev = document.querySelector('.project-col1 .left-arrow'); 
-const next = document.querySelector('.project-col1 .right-arrow');
+    const prev = document.querySelector('.project-col1 .left-arrow'); 
+    const next = document.querySelector('.project-col1 .right-arrow');
 
-let slideIndex = 1;
-showSlides(slideIndex);
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-function nextSlide() {
-    showSlides(slideIndex += 1);
-}
-next.addEventListener('click', nextSlide);
-
-function previousSlide() {
-    showSlides(slideIndex -= 1);
-}
-prev.addEventListener('click', nextSlide);
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    const slides = document.querySelectorAll('.proj1 .box');
-
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = slides.length;
+    function nextSlide() {
+        showSlides(slideIndex += 1);
     }
 
-    for (let slide of slides) {
-        slide.style.display = 'none';
+    next.addEventListener('click', nextSlide);
+
+    function previousSlide() {
+        showSlides(slideIndex -= 1);
     }
-    slides[slideIndex - 1].style.display = 'block';
-}
+    prev.addEventListener('click', previousSlide);
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        const slides = document.querySelectorAll('.proj1 .box');
+
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+
+        for (let slide of slides) {
+            slide.style.display = 'none';
+        }
+        slides[slideIndex - 1].style.display = 'block';
+    }
 }
 slider1();
 
