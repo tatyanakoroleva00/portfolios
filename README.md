@@ -1,7 +1,7 @@
 Репозиторий: portfolios
 
 I. Personal websites:
-1. Professional_portfolio (My professional IT website)
+1. Professional portfolio (My professional IT website)
 2. Online Store (An invented website. Pictures -> https://unsplash.com/fr/s/photos/splash; Icons -> https://icons8.ru/icons/set/vk)
 
 ---------------------------------------
