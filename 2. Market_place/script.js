@@ -1,5 +1,5 @@
-const dropdownBtnCategories = document.querySelector('.dropdown-btn--categories');
-const dropdownBtnProducts = document.querySelector('.dropdown-btn--products');
+const dropdownBtnCategories = document.querySelector('.dropdown-menu.btn--categories');
+const dropdownBtnProducts = document.querySelector('.dropdown-menu.btn--products');
 const dropdownContentCategories = document.querySelector('.dropdown-content--categories');
 const dropdownContentProducts = document.querySelector('.dropdown-content--products');
 const glassAndSearch = document.querySelector('.glass_search ');
