@@ -63,3 +63,14 @@ function addSlides(m) {
   }
   
   
+const dropdownBtn = document.querySelector('.dropdown-wrap');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+dropdownBtn.addEventListener('click', () => {
+  console.log('click');
+  if (dropdownMenu.style.display === 'none') {
+    dropdownMenu.style.display = 'block';
+  } else {
+    dropdownMenu.style.display = 'none';
+  }
+});

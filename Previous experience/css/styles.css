@@ -42,18 +42,23 @@ a:active {
 }
 										/*Left-nav*/
 .left-nav {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	padding-right: 10px;
+	padding-left: 10px;
+	justify-content: space-between;
 	align-items: center;
-	text-align: center;
 }
-
+.left-nav li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+}
 .right-nav {
 	display: grid;
 	justify-content: flex-end;
 	grid-template-columns: 40px 1fr 40px;
-	justify-items: center;
+	justify-items: space-between;
 	align-items: center;
 }
 .left-nav a {
@@ -63,14 +68,9 @@ a:active {
 .order-link {
 	font-weight: 700;
 	background-color: var(--active);
-	padding-top: 10px;
-	padding-bottom: 12px;
-	padding-right: 13px;
+	padding: 10px;
 }
 
-.left-nav li:not(first-child) {
-	border-right: 1px solid green;
-}
 
 .left-nav li:not(:first-of-type) a:hover {
 	font-weight: bold;
@@ -84,9 +84,7 @@ a:active {
 .dropdown-wrap {
 	position: relative;
 }
-.dropdown:hover .dropdown-menu {
-	display: block;
-}
+
 
 .dropdown-menu {
 	display: none;
@@ -117,7 +115,7 @@ a:active {
 	font-size: 18px;
 	font-weight: 700;
 	text-decoration: underline;
-	padding-bottom: 2px;
+	padding-bottom: 2px; 
 }
 
 .shopping-img {
@@ -327,7 +325,7 @@ a:active {
 	justify-content: space-between;
 	margin-left: 80px;
 	margin-right: 80px;
-	
+	position: relative;
 }
 .photo {
 	width: 290px;
@@ -347,7 +345,7 @@ a:active {
 	color: white;
 	font-size: 25px;
 	width: 25px;
-	padding: 16px;
+	padding: 15px 12px 15px 17px;
 	user-select: none;
   	background-color: var(--purple);
 	border-radius: 50%;
@@ -355,7 +353,7 @@ a:active {
 	transition: 0.8s ease;
 }
 .left {
-	left: 10px;
+	left: 25px;
 }
 .right {
 	right: 10px;
@@ -399,12 +397,10 @@ a:active {
 .footer-top-wrap {
 	display: flex;
 	padding: 40px;
+	justify-content: space-between;
 }
 .footer-column {
-	height: 400px;
 	line-height: 2;
-}
-.footer-column--left {
 	width: 400px;
 }
 .footer-column--left p:first-child{
@@ -416,16 +412,6 @@ a:active {
 	margin-bottom: -13px;
 	margin-left: -15px;
 	width: 25px;
-}
-	
-.footer-column--center {
-	padding-left: 40px;
-	width: 600px;
-}
-
-.footer-column--right {
-	width: 400px;
-	padding-left: 40px;
 }
 .footer-map {
 	margin-top: 25px;
@@ -443,6 +429,8 @@ a:active {
 .vk {
 	width: 40px;
 }
+
+/******************FOOTER BOTTOM*********************/
 .footer-bottom-section {
 	background-color: #7a3776;
 }
@@ -450,4 +438,5 @@ a:active {
 	padding-top: 20px;
 	padding-bottom: 25px;
 	color: #cab3e6;
+	text-align: center;
 }
