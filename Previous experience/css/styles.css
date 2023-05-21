@@ -46,11 +46,17 @@ a:active {
 	padding-left: 10px;
 	justify-content: space-between;
 	align-items: center;
+	width: 700px;
+	box-sizing: border-box;
 }
 .left-nav li {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 20px;
+	display: flex;
+	width: 35px;
+}
+
+.order-link {
+	font-weight: 700;
+	background-color: var(--active);
 }
 .right-nav {
 	display: flex;
@@ -61,27 +67,21 @@ a:active {
 .left-nav a {
 	text-decoration: none;
 	color: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
-.order-link {
-	font-weight: 700;
-	background-color: var(--active);
-	padding: 10px;
-}
-
 
 .left-nav li:not(:first-of-type) a:hover {
 	font-weight: bold;
-	padding-right: 5px;
 }
 
 
 
 /*DROPDOWN*/
 
-.dropdown-wrap {
+.dropdown-btn {
 	position: relative;
 }
-
 
 .dropdown-menu {
 	display: none;
@@ -91,11 +91,13 @@ a:active {
   	min-width: 160px;
   	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   	z-index: 1;
+	top: 40px;
+	left: -25px;
 }
 .dropdown-menu a {
-	padding: 12px 16px;
 	display: block;
 	text-decoration: none;
+	padding: 20px 10px;
 }
 .dropdown-menu a:hover {
 	background-color: rgb(248, 234, 234);

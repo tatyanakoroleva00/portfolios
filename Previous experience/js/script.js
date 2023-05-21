@@ -68,9 +68,9 @@ const dropdownMenu = document.querySelector('.dropdown-menu');
 
 dropdownBtn.addEventListener('click', () => {
   console.log('click');
-  if (dropdownMenu.style.display === 'none') {
-    dropdownMenu.style.display = 'block';
-  } else {
+  if (dropdownMenu.style.display === 'block') {
     dropdownMenu.style.display = 'none';
+  } else {
+    dropdownMenu.style.display = 'block';
   }
 });
