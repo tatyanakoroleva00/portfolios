@@ -57,10 +57,6 @@ body {
   cursor: default;
   font-size: 2.4rem;
 }
-#home-link {
-  cursor: default;
-  opacity: 1;
-}
 
 .home-page {
   width: 170rem;
@@ -74,12 +70,11 @@ body {
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
   font-family: 'Comic Neue', sans-serif;
 }
-
 .container {
   max-width: 150rem;
   margin: 0 auto;
 }
-.nav-bar {
+.header__nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -88,6 +83,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
 .logo p {
   font-weight: bold;
@@ -95,50 +91,55 @@ body {
   padding: 0rem 1rem 0rem 1rem;
   border: 0.2px dashed white;
   border-radius: 10px;
-  
 }
-.header__menu {
+.menu {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 
-.header__menu > ul > li {
+.menu__list-item {
   display: inline-block;
 }
-.header__menu li + li {
+.menu__list-item + .menu__list-item {
   margin-left: 5rem;
   padding: 5rem 0rem;
 }
-.header__menu a {
+.menu__link {
   color: white;
   opacity: 0.7;
   font-size: 2.5rem;
   font-weight: 700;
-}
- .header__menu a:not(#home-link):hover, 
-.header__menu a:not(#alter-ego):hover  {
+} 
+.menu__link:not(.menu__link--active):hover {
   opacity: 1;
 }
-#alter-ego {
+.menu__link--active {
+  cursor: default;
+  opacity: 1;
+  color: white;
+}
+.menu__link--alter-ego {
   color: #ef3636;
   opacity: 0.9;
 }
-#alter-ego:hover {
+.menu__link--alter-ego:hover {
   text-shadow: 1px 1px 15px #ef3636;
 }
-#mail-me {
+.menu__send-email {
   filter: invert(1);
   height: 3.6rem;
   margin-bottom: -1rem;
 }
 
 /********************LEFT and RIGHT FIELDS**********/
-.main-field {
+.home-page__content-wrap{
   position: relative;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
-.left-field {
+.home-page__left-decor {
   position: fixed;
   bottom: 0px;
   display: block;
@@ -146,52 +147,52 @@ body {
   width: 1px;
   background-color: #00ffff;
   height: 10rem;
-  margin-left: -4rem;
+  margin-left: -15rem;
 }
-
-.content__wrap {
+.home-page__content{
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-.left-col {
+.home-page__content--left-col {
   display: flex;
   flex-direction: column;  
   max-width: 65rem; 
-  padding-top: 20rem;
+  padding-top: 10rem;
   width: 100%;
   position: relative;
 }
-
-.left-col__inner h1 {
+.title {
   font-size: 8rem;
   color: white;
-  margin-bottom: 2.5rem;
   font-weight: 700;
+}
+.home-page__title{
+  margin-bottom: 2.5rem;
   margin-left: 1rem;
 }
-
-.left-col__inner h2 {
+.subtitle {
   color: rgb(72, 101, 206);
   font-weight: 700;
-  margin-left: 1.2rem;
-  margin-bottom: 2.5rem;
   font-size: 4rem;
 }
-
-.left-col__inner p {
+.home-page__subtitle {
+  margin-left: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+.home-page__text {
   margin-left: 1.2rem;
   margin-bottom: 2.5rem;
   font-size: 2.5rem;
   /* font-family: 'Open Sans', sans-serif; */
 }
 
-.left-col__buttons {
+.home-page__buttons {
   margin-top: 1.5rem;
   display: flex;
 }
 
-.hire_me_btn {
+.home-page__hire-btn {
   background-image: linear-gradient(to bottom right, #e03d37, #e15b44);
   border: none;
   padding: 0.5rem 1.5rem;
@@ -207,12 +208,12 @@ body {
   color: white;
   opacity: 0.9;
 }
-.hire_me_btn:hover {
+.home-page__hire-btn:hover {
   opacity: 1;
   box-shadow: 1px 1px 15px #ef3636;
 }
 
-.downloadCV_btn {
+.home-page__download-cv-btn {
   border: 3px solid #e03d37;
   padding: 5px 15px;
   border-radius: 5px;
@@ -224,14 +225,14 @@ body {
   color: white;
 }
 
-.downloadCV_btn a {
+.download-cv-btn__link {
   text-decoration: none;
   color: white;
   font-size: 1.4rem;
   font-weight: bold;
 }
 
-.download_icon img {
+.download-cv-btn__icon {
   height: 2.8rem;
   margin-left: 1rem;
   margin-top: 0.5rem;
@@ -239,21 +240,20 @@ body {
 }
 
 /********************************RIGHT COL************/
-.right-col {
+.home-page__content--right-col {
   display: flex;
   width: 100%;
 }
 
- .right-col img { 
+ .home-page__image { 
   width: 50rem;
   height: 65rem;
   margin-left: 18rem;
-  margin-top: 10rem;
 } 
 
 
 /*****************RIGHT FIELD --- icons*******/
-.right-field {
+.home-page__right-decor{
   display: flex;
   position: fixed;
   bottom: 0px;
@@ -314,21 +314,19 @@ body {
   opacity: 1;
 }
 /************************************ABOUT ME*******************/
-.about-page {
+.about {
   max-width: 170rem;
   margin: 5rem auto;
   background-color: rgb(28, 29, 37);
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
-h3 {
+.about__title {
   font-size: 5rem;
-  font-weight: 700;
   margin-bottom: 5rem;
   text-align: center;
-  color: #fefffd;
 }
-.skills__box {
+.about__content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -337,7 +335,7 @@ h3 {
   padding-bottom: 5rem;
 }
 
-.study-work-table {
+.about__skillbox {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -356,7 +354,7 @@ h3 {
   gap: 2rem;
 }
 
-.study_left-col {
+.about__skillbox-btns {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -367,7 +365,7 @@ h3 {
   border-right: 1px solid #00ffff;
   background-color: rgb(22, 23, 30);
 }
-.study_left-col button {
+.about__skillbox-btn {
   border: 2px solid rgb(72, 101, 206, 0.3);
   color: rgba(255, 255, 255, 0.812);
   font-size: 2rem;
@@ -378,10 +376,10 @@ h3 {
   opacity: 0.93;
 }
 
-.study_left-col button:hover {
+.about__skillbox-btn:hover {
   opacity: 1;
 }
-.study_right-col {
+.about__skillbox-descr {
   display: flex;
   flex-direction: column;
   padding-left: 2rem;
@@ -392,24 +390,29 @@ h3 {
   padding-right: 0.5rem;
 }
 
-
-.study_right-col p, .study_right-col li {
+.about__skillbox p, .about__skillbox-list-item {
   line-height: 2.9rem;
   letter-spacing: 0.1rem;
 }
 
-.study_right-col li {
+.about__skillbox-list-item {
   margin-bottom: 1rem;
   list-style-type: square;
   list-style-position: inside;
 }
-.study_right-col span {
+
+.about__skillbox-descr span {
   font-weight: bold;
   color: rgb(81, 118, 254);
   opacity: 1;
 }
-
-.computer-skills span {
+.about__education .special-span,
+.about__work-experience .special-span, 
+.about__certificates .special-span {
+  color: #00ffff;
+  font-weight: bold;
+}
+.about__computer-skills span{
   background-color: #09bc56;
   padding: 0.5rem;
   color: rgb(255, 255, 255);
@@ -417,13 +420,12 @@ h3 {
   border-radius: 7px;
   opacity: 0.9;
 }
-.computer-skills span:hover {
+.about__computer-skills span:hover {
   opacity: 1;
 }
 #text1 {
   display: inline;
 }
-
 #text2,
 #text3,
 #text4,
@@ -432,34 +434,30 @@ h3 {
   display: none;
 }
 
-#green-span {
-  color: #00ffff;
-}
-.mine-description{
-  /* border: 3px dashed rgba(255, 255, 255, 0.922); */
+.about__content-text{
   border-radius: 15px;
   max-width: 75rem;
   width: 100%;
   height: 35rem;
   padding: 2.5rem;
   font-size: 1.8rem;
-  font-family: 'Open Sans', sans-serif;
-  
 }
-.mine-description img {
+/* .about__content-text img {
   float: left;
   width: 200px;
   margin-right: 50px;
   padding: 5px;
   margin-left: 7px;
   border: 2px solid rgb(72, 101, 206, 0.3);
-}
-.mine-description p {
+} */
+
+.about__content-text p {
+  font-family: 'Open Sans', sans-serif;
   line-height: 2.9rem;
   letter-spacing: 0.1rem;
   color: #b4b4c5;
 }
-.mine-description span {
+.about__content-text span {
   color: #eaedf4;
   font-weight: 500;
   font-weight: bold;
@@ -632,11 +630,12 @@ h3 {
   width: 100%;
   height: 25rem;
   margin-bottom: 2rem;
+  object-fit: cover;
 }
 .post-box .date {
   margin-bottom: 1rem;
 }
-.title {
+.blog__title {
   color: var(--super-white);
   font-size: 2.5rem;
   font-weight: bold;
@@ -702,7 +701,7 @@ h3 {
 
 /***************PAGE****************************/
 
-bp {
+/* bp {
   color: white;
   max-width: 170rem;
   margin: 5rem auto;
@@ -724,8 +723,8 @@ bp {
 .blog-col {
   width: 70rem;
   /* background-color: rgb(28, 29, 37); */
-  background-color: rgba(28, 29, 37, 0.1); 
-  /* background-color: rgb(22, 23, 30); */
+  /* background-color: rgba(28, 29, 37, 0.1); 
+  /* background-color: rgb(22, 23, 30); 
   
   margin: 0 auto;
   justify-content: flex-start;
@@ -742,7 +741,7 @@ bp {
   color: #b4b4c5;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.7rem;
-}
+} */
 
 
-
+ 

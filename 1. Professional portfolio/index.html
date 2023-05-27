@@ -7,159 +7,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio website</title>
     <link rel="stylesheet" href="css/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap">
     <!-- <a target="_blank" href="https://icons8.com/icon/19044/downward-arrow">Downward Arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
     <script defer src="js/script.js"></script>
 </head>
 
 <body>
     <section class="home-page" id="home">
-        <div class="header">
+        <header class="header">
             <div class="container">
-                <div class="nav-bar">
+                <div class="header__nav-bar">
                     <div class="logo"><p>TK</p></div>
-                    <nav class="header__menu">
-                    <ul>
-                        <li><a href="#" id="home-link">HOME</a></li>
-                        <li><a href="#about-page">ABOUT</a></li>
-                        <li><a href="#portfolio-page">PORTFOLIO</a></li>
-                        <li><a href="#blog-page">BLOG</a></li>
-                        <li><a href="mailto:tatyanakoroleva00@mail.ru"><img id="mail-me" src="img/mail.png.png"></a></li>
-                        <li><a href="#alter-ego" id="alter-ego">ALTER EGO ></a></li>
-                    </ul>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a class="menu__link menu__link--active" href="#">HOME</a></li>
+                            <li class="menu__list-item"><a class="menu__link" href="#about">ABOUT</a></li>
+                            <li class="menu__list-item"><a class="menu__link" href="#portfolio">PORTFOLIO</a></li>
+                            <li class="menu__list-item"><a class="menu__link" href="#blog">BLOG</a></li>
+                            <li class="menu__list-item"><a class="menu__link" href="mailto:tatyanakoroleva00@mail.ru"><img class="menu__send-email" src="img/mail.png"></a></li>
+                            <li class="menu__list-item"><a class="menu__link menu__link--alter-ego" href="#alter-ego">ALTER EGO ></a></li>
+                        </ul>
                     </nav>
                 </div>
             </div>
+        </header>
+        <div class="home-page__content-wrap">
+            <div class="container">
+                <aside class="home-page__left-decor"></aside>
+                <section class="home-page__content">
+                    <div class="home-page__content--left-col">
+                        <div class="home-page__items">
+                            <h1 class="title home-page__title">TATIANA KOROLEVA</h1>
+                            <h2 class="subtitle home-page__subtitle">Junior Fullstack Developer</h2>
+                            <p class="home-page__text"> Currently, I am looking for the employment opportunities in the IT field as a Junior
+                                Fullstack Developer.</p>
+                        </div>
+                        <div class="home-page__buttons">
+                            <button class="hire-btn home-page__hire-btn" onclick="location.href='mailto:tatyanakoroleva00@mail.ru';">HIRE
+                                ME</button>
+                            <button class="download-cv-btn home-page__download-cv-btn">
+                                <div><a class="download-cv-btn__link" href="CV/CV_Koroleva_ТА.pdf" download>DOWNLOAD CV</a></div>
+                                <div><img class="download-cv-btn__icon" src="img/download.png"></div>
+                            </button>
+                        </div>
+                        <div class="bottom-arrow">
+                            <a href="#about-page"><img src="img/arrow.png"></a>
+                        </div>
+                    </div>
+                    <div class="home-page__content--right-col">
+                        <img class="home-page__image" src="img/me.jpg" alt="profile picture">
+                        <!-- <img src="img/me.png" alt="profile picture"> -->
+                    </div>
+                </section>
+                <aside class="home-page__right-decor">
+                    <div class="vertical-line"></div>
+                    <div class="icons">
+                        <a href="https://github.com/tatyanakoroleva00" target="_blank"><img id="github"
+                                src="img/github.png" alt="github"></a>
+                        <a href="https://www.linkedin.com/mwlite/in/tatianakoroleva" target="_blank"><img id="linkedin"
+                                src="img/linkedin.png" alt="linkedin"></a>
+                        <a href="https://www.codewars.com/users/Tatiana%20Koroleva" target="_blank"><img id="codewars"
+                                src="img/codewars.png" alt="codewars"></a>
+                    </div>
+                </aside>
+            </div>
         </div>
-        <section class="main">
-            <section class="main-field">
-                <aside class="left-field"></aside>
-                <div class="container">
-                
-                <aside class="right-field">
-                <div class="vertical-line"></div>
-                <div class="icons">
-                    <a href="https://github.com/tatyanakoroleva00" target="_blank"><img id="github"
-                            src="img/github.png.png" alt="github"></a>
-                    <a href="https://www.linkedin.com/mwlite/in/tatianakoroleva" target="_blank"><img id="linkedin"
-                            src="img/linkedin.png.png" alt="linkedin"></a>
-                    <a href="https://www.codewars.com/users/Tatiana%20Koroleva" target="_blank"><img id="codewars"
-                            src="img/codewars.png" alt="codewars"></a>
-                </div>
-                 </aside>
-                    <div class="content__wrap">
-                        <div class="left-col">
-                            <div class="left-col__inner">
-                                <h1>TATIANA KOROLEVA</h1>
-                                <h2>Junior Fullstack Developer</h2>
-                                <p> Currently, I am looking for the employment opportunities in the IT field as a Junior
-                                    Fullstack Developer.</p>
-                            </div>
-                            <div class="left-col__buttons">
-                                <button class="hire_me_btn" onclick="location.href='mailto:tatyanakoroleva00@mail.ru';">HIRE
-                                    ME</button>
-                                <button class="downloadCV_btn">
-                                    <div><a href="CV/CV_Koroleva_ТА.pdf" download>DOWNLOAD CV</a></div>
-                                    <div class="download_icon"><img src="img/download.png.png"></div>
-                                </button>
-                            </div>
-                            <div class="bottom-arrow">
-                                <a href="#about-page"><img src="img/arrow.png"></a>
-                            </div>
-                        </div>
-                        <div class="right-col">
-                            <img src="img/me.jpg" alt="profile picture">
-                            <!-- <img src="img/me.png" alt="profile picture"> -->
-                        </div>
-                    </div>
-                </div>
-                
-            </section>
-            
-        </section>
     </section>
-    <section class="about-page" id="about-page">
+    <section class="about" id="about">
         <div class="container">
-            <h3>. ABOUT ME</h3>
-            <section class="skills__box">
-                <div class="study-work-table">
-                    <div class="study_left-col">
-                        <button id="btn1" class="btn"><span>Education</span></button>
-                        <button id="btn2" class="btn"><span>Work Experience</span></button>
-                        <button id="btn3" class="btn"><span>Languages</span></button>
-                        <button id="btn4" class="btn"><span>Computer Skills</span></button>
-                        <button id="btn5" class="btn"><span>Soft Skills</span></button>
-                        <button id="btn6" class="btn"><span>Certificates</span></button>
+            <h3 class="title about__title">. ABOUT ME</h3>
+            <section class="about__content">
+                <div class="about__skillbox">
+                    <div class="about__skillbox-btns">
+                        <button id="btn1" class="about__skillbox-btn"><span>Education</span></button>
+                        <button id="btn2" class="about__skillbox-btn"><span>Work Experience</span></button>
+                        <button id="btn3" class="about__skillbox-btn"><span>Languages</span></button>
+                        <button id="btn4" class="about__skillbox-btn"><span>Computer Skills</span></button>
+                        <button id="btn5" class="about__skillbox-btn"><span>Soft Skills</span></button>
+                        <button id="btn6" class="about__skillbox-btn"><span>Certificates</span></button>
                     </div>
-                    <div class="study_right-col">
-                        <div id="text1" class="text education">
-                            <ul>
-                                <li><span id="green-span">2023, FULLSTACK courses. (260hours) Center "Professional"</span><br>
+                    <div class="about__skillbox-descr">
+                        <div id="text1" class="about__skillbox-text about__education">
+                            <ul class="about__skillbox-list">
+                                <li class="about__skillbox-list-item"><span class="special-span">2023, FULLSTACK courses. (260hours) Center "Professional"</span>
                                 Moscow, Russia </li>
-                                <li><span>2015, M2 (MBA) “Business, European Management,
+                                <li class="about__skillbox-list-item" ><span>2015, M2 (MBA) “Business, European Management,
                                         Languages”.</span><br>
                                     University of Orleans, France. </li>
-                                <li><span>2009, M2 “Diplomacy, International
+                                <li class="about__skillbox-list-item"><span>2009, M2 “Diplomacy, International
                                         Relations”.</span><br> Moscow State
                                     Linguistic University, Russia.</li>
-                                <li><span>English Special School</span><br>Moscow, Russia</li>
+                                <li class="about__skillbox-list-item"><span>English Special School</span><br>Moscow, Russia</li>
                             </ul>
                         </div>
-                        <div id="text2" class="text work-experience">
-                            <ul>
-                                <li id="green-span"><strong>*Currently searching for work experience in the IT domain.</strong> </li>
-                                <li><span>2018 – 2020, SENIOR TRAVEL MANAGER in ("TSAR VOYAGES", Moscow, RU). </span>Creating travel tourist routes and programs. Interaction with clients from anglophone and francophone countries. Interation with service providers (hotels, guides, transport companies, museums...).</li>
-                                <li><span>2017 – 2018, CARGO TRANSPORTATION MANAGER ("KUEHNE + NAGEL", Paris, FR).</span>  Ordering
+                        <div id="text2" class="about__skillbox-text about__work-experience">
+                            <ul class="about__skillbox-list">
+                                <li class="about__skillbox-list-item"><span class="special-span">*Currently searching for work experience in the IT domain.<span class="special-span"></span> </li>
+                                <li class="about__skillbox-list-item"><span>2018 – 2020, SENIOR TRAVEL MANAGER in ("TSAR VOYAGES", Moscow, RU). </span>Creating travel tourist routes and programs. Interaction with clients from anglophone and francophone countries. Interation with service providers (hotels, guides, transport companies, museums...).</li>
+                                <li class="about__skillbox-list-item"><span>2017 – 2018, CARGO TRANSPORTATION MANAGER ("KUEHNE + NAGEL", Paris, FR).</span>  Ordering
                                     transport for good delivery in
                                     Europe. Interaction with European clients and service providers. </li>
                             </ul>
                         </div>
-                        <div id="text3" class="text languages">
-                            <ul>
-                                <li><span>Russian</span> - native, C2</li>
-                                <li><span>English, French</span> - advanced, C1/C2;</li>
-                                <li><span>Spanish, Italian, German</span> – intermediate, B1;</li>
-                                <li><span>Chinese</span> - A1</li>
-                                <li><span>Latin</span></li>
+                        <div id="text3" class="about__skillbox-text about__languages">
+                            <ul class="about__skillbox-list">
+                                <li class="about__skillbox-list-item"><span>Russian</span> - native, C2</li>
+                                <li class="about__skillbox-list-item"><span>English, French</span> - advanced, C1/C2;</li>
+                                <li class="about__skillbox-list-item"><span>Spanish, Italian, German</span> – intermediate, B1;</li>
+                                <li class="about__skillbox-list-item"><span>Chinese</span> - A1</li>
+                                <li class="about__skillbox-list-item"><span>Latin</span></li>
                             </ul>
                         </div>
-                        <div id="text4" class="text computer-skills">
-                            <p><span>CSS</span><span>HTML</span><span>JavaScript</span><span>PHP</span><span>SQL</span></p><br />
-                            <p><span>Git</span><span>VSCode</span><span>Sublime</span><span>Figma</span></p><br />
+                        <div id="text4" class="about__skillbox-text about__computer-skills">
+                            <p><span>CSS</span><span>HTML</span><span>JavaScript</span><span>PHP</span><span>SQL</span><span>BEM</span></p><br />
+
+                            <p><span>Git</span><span>WebStorm</span><span>VSCode</span><span>Sublime</span><span>Figma</span></p><br /><br>
+
                             <p><span>Adobe Photoshop</span><span>Adobe Premiere Pro</span></p><br>
+
                             </p><span>Fast Blind typewriting > 500 symb/min;</span></p><br />
+
                             <p><span>Excel</span><span>Word</span><span>PowerPoint</span></p><br />
                             
                         </div>
-                        <div id="text5" class="text soft-skills">
-                            <ul>
-                                <li><span>Responsible, attentive</span></li>
-                                <li>Able to work <span>independently</span>  and in a <span>group</span> </li>
-                                <li>Both <span>analytical</span> and
+                        <div id="text5" class="about__skillbox-text about__soft-skills ">
+                            <ul class="about__skillbox-list">
+                                <li class="about__skillbox-list-item"><span>Responsible, attentive</span></li>
+                                <li class="about__skillbox-list-item">Able to work <span>independently</span>  and in a <span>group</span> </li>
+                                <li class="about__skillbox-list-item">Both <span>analytical</span> and
                                 <span>creative</span> mindsets</li>
-                                <li>In constant <span>self-development</span></li>
-                                <li><span>Leadership and
+                                <li class="about__skillbox-list-item">In constant <span>self-development</span></li>
+                                <li class="about__skillbox-list-item"><span>Leadership and
                                 organizational skills</span></li>
-                                <li>Capability of <span>analyzing</span> and <span>solving</span> complex problems</li>
+                                <li class="about__skillbox-list-item">Capability of <span>analyzing</span> and <span>solving</span> complex problems</li>
                             </ul>
                         </div>
-                        <div id="text6" class="text certificates">
-                            <ul>
-                                <li><a href="https://www.freecodecamp.org/certification/tatianakoroleva/responsive-web-design"><span id="green-span">"Responsive Web Design. <br> Developer Certification, representing approximately 300hours of coursework. FREECODE.CAMP (21Feb. 2023)</span></a> (<-)</li>
-                                <li>Certificate "JavaScript for beginners" (100%), 2021, Stepik.org</li>
-                                <li>Certificate "HTML/CSS: basic" (100%), 2021, Stepik.org</li>
-                                <li>Certificate "IELTS", 2014 (English)</li>
-                                <li>Certificate "DALF C1", 2013 (French)</li>
-                                <li>Certificate "HTML / CSS", 2006, (Computer Center "Specialist" at the Bauman University)</li>
-                                <li>Certificate "Photoshop CS2", 2006, (Computer Center "Specialist" at the Bauman University)</li>
+                        <div id="text6" class="about__skillbox-text about__certificates">
+                            <ul class="about__skillbox-list">
+                                <li class="about__skillbox-list-item"><a href="https://www.freecodecamp.org/certification/tatianakoroleva/responsive-web-design"><span class="special-span">"Responsive Web Design. <br> Developer Certification, representing approximately 300hours of coursework. FREECODE.CAMP (21Feb. 2023)</span></a> (<-)</li>
+                                <li class="about__skillbox-list-item">Certificate "JavaScript for beginners" (100%), 2021, Stepik.org</li>
+                                <li class="about__skillbox-list-item">Certificate "HTML/CSS: basic" (100%), 2021, Stepik.org</li>
+                                <li class="about__skillbox-list-item">Certificate "IELTS", 2014 (English)</li>
+                                <li class="about__skillbox-list-item">Certificate "DALF C1", 2013 (French)</li>
+                                <li class="about__skillbox-list-item">Certificate "HTML / CSS", 2006, (Computer Center "Specialist" at the Bauman University)</li>
+                                <li class="about__skillbox-list-item">Certificate "Photoshop CS2", 2006, (Computer Center "Specialist" at the Bauman University)</li>
                             </ul>
                         </div>
 
                     </div>
                 </div>
-                <div class="mine-description">
+                <div class="about__content-text">
                     <p>Hi! My name is Tatiana.</p><br>
                     <p>I've been passionate about <span>languages and computers</span> since
                         my early childhood. I have both <span>creative and practical minds</span> that help me
@@ -232,7 +230,7 @@
                         </div>
 
                         <div class="project-descr-col">
-                            <a href="https://github.com/tatyanakoroleva00/portfolios/tree/main/Templates%20practice/03.%20Template%20-%20Pipernet%20is%20here" target="_blank"><h5>#3."PiperNet Is Here" (2023)</h5></a><br>
+                            <a href="../Templates practice/03. Template - Pipernet is here/index.html" target="_blank"><h5>#3."PiperNet Is Here" (2023)</h5></a><br>
                             <p>It was my first project that I found while doing my HTML / CSS layout course. I made it in 2021 for first time. But in 2023, I've decided to try to do it again. I got acquainted with the flex layout</p>
                         </div> 
                     </div>
@@ -247,8 +245,8 @@
                         </div>
 
                         <div class="project-descr-col">
-                            <a href="https://github.com/tatyanakoroleva00/portfolios/tree/main/Templates%20practice/04.%20John" target="_blank"><h5>2#."John" (2022)</h5></a><br>
-                            <p>This project gave me an idea of the responsive design. Margins, </p>
+                            <a href="../Templates practice/04. John/index.html" target="_blank"><h5>#2."John" (2022)</h5></a><br>
+                            <p>This project gave me an idea of the responsive design.</p>
                         </div>
                     </div>
                     
@@ -263,7 +261,7 @@
                         </div>
                     
                         <div class="project-descr-col">
-                            <a href="https://github.com/tatyanakoroleva00/portfolios/tree/main/Templates%20practice/02.%20Template%20-%20Watches" target="_blank"><h5>#1."Watch" (2022)</h5></a><br>
+                            <a href="../Templates practice/02. Template - Watches/index.html" target="_blank"><h5>#1."Watches" (2022)</h5></a><br>
                             <p>This template introduced me to a commercial website. </p>
                         </div>
 
@@ -294,20 +292,20 @@
                 <div class="post-box">
                     <img src="img/pic1.jpg" alt="IT domain3">
                     <p class="date">13 May 2023</p>
-                    <h4 class="title">POST #3</h4>
+                    <h4 class="blog__title">POST #3</h4>
                     <p class="post-text">Happy and fruitful Saturday, because I've created several sliders for my website, linked buttons and texts together, made up some new designs in my head to realize them in the future...</p> 
                     <p><a target="_blank"  href="pages/blog.html" class="read-more">Read more -></a></p>
                 </div>
                 <div class="post-box">
                     <img src="img/pic3.jpg" alt="IT domain2">
                     <p class="date">12 Mai 2023</p>
-                    <h4 class="title">POST #2</h4>
+                    <h4 class="blog__title">POST #2</h4>
                     <p class="post-text">Today, I've decided to edit my classes and id-s names so that to make my code more structural. I am on the way of learning how to write a clean code so that to be understandable and to understand others.  <a target="_blank" href="pages/blog.html" class="read-more">Read more -></a></p>
                 </div>
                 <div class="post-box">
                     <img src="img/pic2.jpg" alt="IT domain1">
                     <p class="date">11 Mai 2023</p>
-                    <h4 class="title">POST #1</h4>
+                    <h4 class="blog__title">POST #1</h4>
                     <p class="post-text">This is <strong>my first IT post</strong> that I've ever written in my entire life!</p>
                     <p>What an incredible pleasure it is to do what you like and you love. Computers have always played  <a target="_blank" href="pages/blog.html" class="read-more">Read more -></a></p>
                     

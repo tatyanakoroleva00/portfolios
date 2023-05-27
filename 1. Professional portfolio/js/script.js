@@ -1,6 +1,6 @@
 /*This is a function which links each button with a specific text. Clicking on one button, other buttons will lose their shadows and the only pressed button will have its shadow. */
 
-    const buttons = document.querySelectorAll('.btn');
+    const buttons = document.querySelectorAll('.about__skillbox-btn');
     const btn1 = document.querySelector('#btn1');
     const btn2 = document.querySelector('#btn2');
     const btn3 = document.querySelector('#btn3');
@@ -8,7 +8,7 @@
     const btn5 = document.querySelector('#btn5');
     const btn6 = document.querySelector('#btn6');
 
-    const text = document.querySelectorAll('.text');
+    const text = document.querySelectorAll('.about__skillbox-text');
     const text1 = document.querySelector('#text1');
     const text2 = document.querySelector('#text2');
     const text3 = document.querySelector('#text3');
