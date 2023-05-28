@@ -122,8 +122,8 @@
 
 function slider1() {
 
-    const prev = document.querySelector('.project-col1 .left-arrow'); 
-    const next = document.querySelector('.project-col1 .right-arrow');
+    const prev = document.querySelector('.project-col1 .portfolio__left-arrow'); 
+    const next = document.querySelector('.project-col1 .portfolio__right-arrow');
 
     let slideIndex = 1;
     showSlides(slideIndex);
@@ -144,7 +144,7 @@ function slider1() {
     }
 
     function showSlides(n) {
-        const slides = document.querySelectorAll('.proj1 .box');
+        const slides = document.querySelectorAll('.proj1 .portfolio__img-box');
 
         if (n > slides.length) {
             slideIndex = 1;
@@ -162,8 +162,8 @@ function slider1() {
 slider1();
 
 function slider2() {
-    const prev2 = document.querySelector('.project-col2 .left-arrow'); 
-    const next2 = document.querySelector('.project-col2 .right-arrow');
+    const prev2 = document.querySelector('.project-col2 .portfolio__left-arrow'); 
+    const next2 = document.querySelector('.project-col2 .portfolio__right-arrow');
 
     let slideIndex = 1;
     showSlides(slideIndex);
@@ -183,7 +183,7 @@ function slider2() {
     }
 
 function showSlides(n) {
-    const slides2 = document.querySelectorAll('.proj2 .box');
+    const slides2 = document.querySelectorAll('.proj2 .portfolio__img-box');
 
     if (n > slides2.length) {
         slideIndex = 1;
@@ -202,8 +202,8 @@ slider2();
 
 function slider3() {
 
-    const prev3 = document.querySelector('.project-col3 .left-arrow'); 
-    const next3 = document.querySelector('.project-col3 .right-arrow');
+    const prev3 = document.querySelector('.project-col3 .portfolio__left-arrow'); 
+    const next3 = document.querySelector('.project-col3 .portfolio__right-arrow');
     
     let slideIndex = 1;
     showSlides(slideIndex);
@@ -223,7 +223,7 @@ function slider3() {
     }
     
     function showSlides(n) {
-        const slides3 = document.querySelectorAll('.project-col3 .box');
+        const slides3 = document.querySelectorAll('.project-col3 .portfolio__img-box');
     
         if (n > slides3.length) {
             slideIndex = 1;
@@ -242,8 +242,8 @@ function slider3() {
 
     function slider4() {
 
-        const prev4 = document.querySelector('.project-col4 .left-arrow'); 
-        const next4 = document.querySelector('.project-col4 .right-arrow');
+        const prev4 = document.querySelector('.project-col4 .portfolio__left-arrow'); 
+        const next4 = document.querySelector('.project-col4 .portfolio__right-arrow');
         
         let slideIndex = 1;
         showSlides(slideIndex);
@@ -263,7 +263,7 @@ function slider3() {
         }
         
         function showSlides(n) {
-            const slides4 = document.querySelectorAll('.project-col4 .box');
+            const slides4 = document.querySelectorAll('.project-col4 .portfolio__img-box');
         
             if (n > slides4.length) {
                 slideIndex = 1;

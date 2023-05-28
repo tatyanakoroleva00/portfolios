@@ -314,14 +314,17 @@ body {
   opacity: 1;
 }
 /************************************ABOUT ME*******************/
-.about {
+.about, .portfolio {
   max-width: 170rem;
   margin: 5rem auto;
   background-color: rgb(28, 29, 37);
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
-.about__title {
+.about__title, 
+.portfolio__title, 
+.blog__title, 
+.contact__title {
   font-size: 5rem;
   margin-bottom: 5rem;
   text-align: center;
@@ -442,15 +445,6 @@ body {
   padding: 2.5rem;
   font-size: 1.8rem;
 }
-/* .about__content-text img {
-  float: left;
-  width: 200px;
-  margin-right: 50px;
-  padding: 5px;
-  margin-left: 7px;
-  border: 2px solid rgb(72, 101, 206, 0.3);
-} */
-
 .about__content-text p {
   font-family: 'Open Sans', sans-serif;
   line-height: 2.9rem;
@@ -464,13 +458,6 @@ body {
 }
 
 /*******************************************************PORTFOLIO PAGE************************/
-.portfolio-page {
-  max-width: 170rem;
-  margin: 5rem auto;
-  background-color: rgb(28, 29, 37);
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
 .portfolio__links {
   display: flex;
   flex-direction: row;
@@ -482,18 +469,27 @@ body {
   padding-bottom: 3rem;
   border-bottom: 1px solid gray;
 }
-.portfolio__links a {
+.portfolio__link-templates,
+.portfolio__link--pers-proj {
   color: #828387;
   font-size: 2.5rem;
   opacity: 1;
 }
+.portfolio__link--templates {
+  color:  #00ffff;
+  font-weight: bold;
+}
+.portfolio__link--templates:hover {
+  text-shadow: 1px 1px 15px #00ffff;
+}
+.portfolio__link--pers-proj:hover {
+  text-shadow: 1px 1px 15px #dddddd;
+}
 
-.portfolio-gallery.templates, 
-#personal-projects-gallery {
+.portfolio__gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /*40 rem*/
-  /* border: 0.2rem solid rgb(72, 101, 206, 0.8); */
-  width: 130rem;
+  width: 132rem;
   margin: 2rem auto 5rem auto;
   justify-content: center;
   justify-items: center;
@@ -501,23 +497,31 @@ body {
   gap: 3.5rem;
   box-sizing: border-box;
 }
+.portfolio__gallery-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 40rem;
+  z-index:1;
+  /* background-color: rgb(22, 23, 30); */
+  border: 1px solid gray;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  background-color: rgba(128, 128, 128, 0.1);
+}
 
-#templates-link {
-  color:  #00ffff;
-  font-weight: bold;
-}
-#templates-link:hover {
-  text-shadow: 1px 1px 15px #00ffff;
-}
-#personal-projects-link:hover {
-  text-shadow: 1px 1px 15px #dddddd;
-}
-
-.project-col {
+.portfolio__item {
   width: 40rem;
   position: relative;
+  cursor: pointer;
 }
-.project-descr-col {
+.portfolio__img {
+  width: 40rem;
+  height: 30rem;
+  z-index: 2;
+  object-fit: cover;
+}
+.portfolio__item-descr {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
   line-height: 2.9rem;
@@ -528,48 +532,17 @@ body {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.project-descr-col a {
+.portfolio__item-descr-link {
   color: #b4b4c5;
 }
-.project-descr-col h5 {
+.portfolio__item-title {
   font-size: 2.4rem;
   font-weight: bold;
   opacity: 0.8;
 }
-.project-descr-col h5:hover {
+.portfolio__item-title:hover {
   opacity: 1;
   text-shadow: 1px 1px 15px rgb(83, 81, 81); 
-}
-
-.proj1 .box img, 
-.proj2 .box img, 
-.proj3 .box img,
-.proj4 .box img {
-  width: 40rem;
-  height: 30rem;
-}
-
-.proj {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 40rem;
-  z-index:1;
-  /* background-color: rgb(22, 23, 30); */
-  border: 1px solid gray;
-  padding-bottom: 2rem;
-  box-sizing: border-box;
-  background-color: rgba(128, 128, 128, 0.1);
-}
-.proj img{
-  z-index: 2;
-  object-fit: cover;
-}
-
-.personal-proj-1 .box img {
-  width: 40rem;
-  height: 30rem;
-  object-fit:cover;
 }
 #personal-projects-gallery {
   display: none;
@@ -577,8 +550,8 @@ body {
 
 
 /**********************ARROWS***********************/
-.proj .left-arrow, 
-.proj .right-arrow {
+.portfolio__left-arrow, 
+.portfolio__right-arrow {
   position: absolute;
   z-index: 3;
   bottom: -2.5rem;
@@ -594,30 +567,27 @@ body {
   border: 0.1px solid rgba(225, 225, 225, 0.726);
   transition: 0.6s ease;
 }
-.right-arrow {
+.portfolio__right-arrow {
   /* right: 0.5rem; */
   right: -1.7rem;
 }
-.left-arrow {
+.portfolio__left-arrow {
   left: -1.7rem;
 }
-.proj1 .left-arrow:hover, 
-.proj1 .right-arrow:hover {
+.portfolio__left-arrow:hover, 
+.portfolio__right-arrow:hover {
   opacity: 1;
 }
 
-
-
-
 /************************************************BLOG******************************************/
-.blog-page {
+.blog {
   max-width: 170rem;
   margin: 5rem auto;
   background-color: rgb(28, 29, 37);
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
-.blog-section {
+.blog__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -626,69 +596,69 @@ body {
   gap: 3rem;
   margin-bottom: 5rem;
 }
-.post-box img {
+.blog__item-image {
   width: 100%;
   height: 25rem;
   margin-bottom: 2rem;
   object-fit: cover;
 }
-.post-box .date {
+.blog__item-date {
   margin-bottom: 1rem;
 }
-.blog__title {
+.blog__item-title {
   color: var(--super-white);
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
- 
 }
-.post-box p{
+.blog__item-text {
   color: #828387;
   font-size: 2rem;
   line-height: 2.9rem;
   letter-spacing: 0.1rem;
 }
 
-.read-more {
-  color: rgb(81, 118, 254);
+.blog__item-read-more {
+  color: rgb(208, 217, 250);
   opacity: 1;
-  float: right;
-  margin-top: 2rem;
+  /* float: right; */
+  /* margin-top: 2rem; */
 }
 
 /******************************CONTACT****************/
-.contact-page {
+.contact {
   max-width: 170rem;
   margin: 5rem auto;
   background-color: rgb(28, 29, 37);
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
-.contact-form {
+.contact__form {
   width: 70rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin: 0 auto;
 }
-.contact-form--name, 
-.contact-form--email {
+.contact__form-input {
   height: 4rem;
 }
-.contact-form--textarea, 
-.contact-form--name, 
-.contact-form--email {
+.contact__form-textarea, 
+.contact__form-input {
   font-size: 2rem;
   font-family: 'Comic Neue', sans-serif;
   padding-left: 1rem;
 }
-.contact-form--input {
+.contact__form-textarea {
+  padding-top: 1rem;
+}
+.contact__form-submit{
   padding: 1rem 0rem;
   cursor: pointer;
 }
 
 /******************************BOTTOM****************/
-.bottom-section {
+.footer {
   max-width: 170rem;
   margin: -2rem auto;
   background-color: rgb(22, 23, 30);
@@ -701,7 +671,7 @@ body {
 
 /***************PAGE****************************/
 
-/* bp {
+.blog-page {
   color: white;
   max-width: 170rem;
   margin: 5rem auto;
@@ -710,38 +680,32 @@ body {
   padding-bottom: 10rem;
 }
 
-.bp-header {
+.bp__header {
   max-width: 170rem;
   font-family: 'Comic Neue', sans-serif;
 }
 
-.bp-container {
-  max-width: 150rem;
-  margin: 5rem auto;
-}
-
-.blog-col {
+.bp__column {
   width: 70rem;
-  /* background-color: rgb(28, 29, 37); */
-  /* background-color: rgba(28, 29, 37, 0.1); 
-  /* background-color: rgb(22, 23, 30); 
-  
+  background-color: rgb(28, 29, 37);
+  background-color: rgba(28, 29, 37, 0.1); 
+  background-color: rgb(22, 23, 30); 
   margin: 0 auto;
   justify-content: flex-start;
 }
-.post {
+.bp__item{
   margin-bottom: 2rem;
   border: 1px solid white;
   padding: 5rem 3rem;
 }
-.post p {
+.bp__item-descr {
   margin-bottom: 1rem;
   line-height: 3.5rem;
   letter-spacing: 0.1rem;
   color: #b4b4c5;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.7rem;
-} */
+}
 
 
  
