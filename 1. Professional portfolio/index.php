@@ -1,3 +1,10 @@
+<?php
+require 'models/Posts.php';
+$posts = Posts::getLimitedNumberOfPosts();
+
+//if($_POST[])
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,15 +25,15 @@
         <header class="header">
             <div class="container">
                 <div class="header__nav-bar">
-                    <div class="logo"><p>TK</p></div>
+                    <div class="logo"><a href="#about" style="color: white;"><p>TK</p></a></div>
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item"><a class="menu__link menu__link--active" href="#">HOME</a></li>
                             <li class="menu__list-item"><a class="menu__link" href="#about">ABOUT</a></li>
                             <li class="menu__list-item"><a class="menu__link" href="#portfolio">PORTFOLIO</a></li>
                             <li class="menu__list-item"><a class="menu__link" href="#blog">BLOG</a></li>
-                            <li class="menu__list-item"><a class="menu__link" href="mailto:tatyanakoroleva00@mail.ru"><img class="menu__send-email" src="img/mail.png"></a></li>
-                            <li class="menu__list-item"><a class="menu__link menu__link--alter-ego" href="#alter-ego">ALTER EGO ></a></li>
+                            <li class="menu__list-item"><a class="menu__link" href="mailto:tatyanakoroleva00@mail.ru"><img class="menu__send-email" src="img/mail.png" alt="mail me"></a></li>
+                            <li class="menu__list-item"><a class="menu__link menu__link--alter-ego" href="../3.%20AlterEgo%20-%20personal%20site/index.html">ALTER EGO></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -47,12 +54,12 @@
                             <button class="hire-btn home-page__hire-btn" onclick="location.href='mailto:tatyanakoroleva00@mail.ru';">HIRE
                                 ME</button>
                             <button class="download-cv-btn home-page__download-cv-btn">
-                                <div><a class="download-cv-btn__link" href="CV/CV_Koroleva_ТА.pdf" download>DOWNLOAD CV</a></div>
-                                <div><img class="download-cv-btn__icon" src="img/download.png"></div>
+                                <a class="download-cv-btn__link" href="CV/CV_Koroleva_ТА.pdf" download>DOWNLOAD CV</a>
+                                <img class="download-cv-btn__icon" src="img/download.png" alt="download cv">
                             </button>
                         </div>
                         <div class="bottom-arrow">
-                            <a href="#about-page"><img src="img/arrow.png"></a>
+                            <a href="#about"><img src="img/arrow.png" alt="bottom arrow"></a>
                         </div>
                     </div>
                     <div class="home-page__content--right-col">
@@ -95,9 +102,12 @@
                                 <li class="about__skillbox-list-item" ><span>2015, M2 (MBA) “Business, European Management,
                                         Languages”.</span><br>
                                     University of Orleans, France. </li>
+                                <li class="about__skillbox-list-item"><span>2011, Military Interpreter (lieutenant grade)
+                                        </span><br> Moscow State Linguistic University, Military department, Russia.</li>
                                 <li class="about__skillbox-list-item"><span>2009, M2 “Diplomacy, International
                                         Relations”.</span><br> Moscow State
                                     Linguistic University, Russia.</li>
+
                                 <li class="about__skillbox-list-item"><span>English Special School</span><br>Moscow, Russia</li>
                             </ul>
                         </div>
@@ -126,7 +136,7 @@
 
                             <p><span>Adobe Photoshop</span><span>Adobe Premiere Pro</span></p><br>
 
-                            </p><span>Fast Blind typewriting > 500 symb/min;</span></p><br />
+                            <p><span>Fast Blind typewriting > 500 symb/min;</span></p><br />
 
                             <p><span>Excel</span><span>Word</span><span>PowerPoint</span></p><br />
                             
@@ -181,87 +191,101 @@
         <div class="container">
                 <h3 class="title portfolio__title">. PORTFOLIO</h3>
                 <div class="portfolio__links">
-                        <div><a class="portfolio__link--templates" href="#portfolio-page" id="templates-link">+ TEMPLATES</a></div>
-                        <div><a class="portfolio__link--pers-proj" href="#portfolio-page" id="personal-projects-link">+ PERSONAL PROJECTS</a></div>
+                        <div><a class="portfolio__link--templates"  id="templates-link">+ TEMPLATES</a></div>
+                        <div><a class="portfolio__link--pers-proj" id="personal-projects-link">+ PERSONAL PROJECTS</a></div>
                 </div>
                 <div class="portfolio__gallery portfolio__gallery--templates" id="templates-gallery">
                     
                     <div class="portfolio__gallery-item proj1">
                         <div class="portfolio__item project-col1"><a href="../Templates practice/01. Template - MoGo/index.html" target="_blank">
-                            <div class="portfolio__img-box"><img class="portfolio__img first-img" src="tiny_pics_portfolios/mogo1.jpg" alt="project1"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img first-img" src="img/tiny_pics_portfolios/mogo1.jpg" alt="project1"></div>
                             
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="tiny_pics_portfolios/mogo2.jpg" alt="project1"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/mogo2.jpg" alt="project1"></div>
                             
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="tiny_pics_portfolios/mogo3.jpg" alt="project1"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/mogo3.jpg" alt="project1"></div>
                             
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="tiny_pics_portfolios/mogo4.jpg" alt="project1"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/mogo4.jpg" alt="project1"></div>
                             
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="tiny_pics_portfolios/mogo5.jpg" alt="project1"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/mogo5.jpg" alt="project1"></div>
                             
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="tiny_pics_portfolios/mogo6.jpg" alt="project1"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/mogo6.jpg" alt="project1"></div>
                             
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="tiny_pics_portfolios/mogo7.jpg" alt="project1"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/mogo7.jpg" alt="project1"></div>
                             
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="tiny_pics_portfolios/mogo8.jpg" alt="project1"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/mogo8.jpg" alt="project1"></div>
                             
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="tiny_pics_portfolios/mogo9.jpg" alt="project1"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/mogo9.jpg" alt="project1"></div>
                             
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="tiny_pics_portfolios/mogo10.jpg" alt="project1"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/mogo10.jpg" alt="project1"></div>
                             
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="tiny_pics_portfolios/mogo11.jpg" alt="project1"></div></a>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/mogo11.jpg" alt="project1"></div></a>
                             <button class="portfolio__left-arrow">&lt;</button>
                             <button class="portfolio__right-arrow">&gt;</button>
                         </div>
                             
                         <div class="portfolio__item-descr">
                         <a class="portfolio__item-descr-link" href="https://github.com/tatyanakoroleva00/portfolios/tree/7a1d0c0777d2ed181784e242da5a4c648f91bbd4/Templates%20practice/01.%20Template%20-%20MoGo" target="_blank"><h5 class="portfolio__item-title">#4."Welcome To Mogo" (2023)</h5></a><br>
-                            <p>This multi-pages project, I liked and I do like a lot because it gave me the vast knowledge in HTML / CSS layout, and also gave me the vision of practical websites. </p>
+                            <p>This multi-pages project, I consider to be the one which shows the growth in coding skills.
+                                It gave me the vast knowledge in HTML / CSS layout, and also gave me the vision of real websites.
+                                I used absolute and relative positions to place items one on another, opacity and filters. There were repetitive sections, flex-boxes,
+                                icons near the text, accordion that I created functioning. Quotes with side arrows that I didn't animate not knowing the designer's idea.
+                                Three layer positioning: image, image shifted to the left-top, icons. Large pictures gallery. Tiny icons: views and comments.
+                                Subscribe form. Map. Footer with 3 columns, instagram gallery, blogs.
+                            </p>
                         </div>
                     </div>
                     
 
                     <div class="portfolio__gallery-item proj2">
                         <div class="portfolio__item project-col2"><a href="../Templates practice/03. Template - Pipernet is here/index.html" target="_blank">
-                            <div class="portfolio__img-box"><img class="portfolio__img"  src="tiny_pics_portfolios/PiperNet1.jpg" alt="project2"></div>
-                            <div class="portfolio__img-box"><img class="portfolio__img"  src="tiny_pics_portfolios/PiperNet2.jpg" alt="project2"></div></a>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/PiperNet1.jpg" alt="project2"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/PiperNet2.jpg" alt="project2"></div></a>
                             <button class="portfolio__left-arrow">&lt;</button>
                             <button class="portfolio__right-arrow">&gt;</button>
                         </div>
 
                         <div class="portfolio__item-descr">
                             <a class="portfolio__item-descr-link" href="https://github.com/tatyanakoroleva00/portfolios/tree/7a1d0c0777d2ed181784e242da5a4c648f91bbd4/Templates%20practice/03.%20Template%20-%20Pipernet%20is%20here" target="_blank"><h5 class="portfolio__item-title">#3."PiperNet Is Here" (2023)</h5></a><br>
-                            <p>It was my first project that I found while doing my HTML / CSS layout course. I made it in 2021 for first time. But in 2023, I've decided to try to do it again. I got acquainted with the flex layout</p>
+                            <p>It was my first project that I found while doing my HTML / CSS layout course. I made it in 2021 for first time.
+                                But in 2023, I've decided to try to do it again. I got acquainted with the flex layout.
+                                My coding was more conscious. I've learnt about 100% heading and containers.
+                                Also, how to place a text on an image using absolute and relative positioning. How to use flex-wrap and to make images round. </p>
                         </div> 
                     </div>
 
 
                     <div class="portfolio__gallery-item proj3">
                         <div class="portfolio__item project-col3"><a href="../Templates practice/04. John/index.html" target="_blank">
-                            <div class="portfolio__img-box"><img class="portfolio__img"  src="tiny_pics_portfolios/John1.jpg" alt="project3"></div>
-                            <div class="portfolio__img-box"><img class="portfolio__img"  src="tiny_pics_portfolios/John2.jpg" alt="project3"></div></a>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/John1.jpg" alt="project3"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/John2.jpg" alt="project3"></div></a>
                             <button class="portfolio__left-arrow">&lt;</button>
                             <button class="portfolio__right-arrow">&gt;</button>
                         </div>
 
                         <div class="portfolio__item-descr">
                             <a class="portfolio__item-descr-link"  href="https://github.com/tatyanakoroleva00/portfolios/tree/7a1d0c0777d2ed181784e242da5a4c648f91bbd4/Templates%20practice/04.%20John" target="_blank"><h5 class="portfolio__item-title">#2."John" (2022)</h5></a><br>
-                            <p>This project gave me an idea of the responsive design.</p>
+                            <p>This project gave me an idea of the responsive design. What I learned was auto margin,
+                                nav panel, positioning of an image and text aside, download resume button, flex-boxing
+                                applied to posts. The section "featured" taught me to place image to the left of the text,
+                                which also consisted of flexes. Icons in the bottom and copyright were new to me. I learnt
+                                how to search them and to place them. </p>
                         </div>
                     </div>
                     
                     <div class="portfolio__gallery-item proj4">
                         <div class="portfolio__item project-col4"><a href="../Templates practice/02. Template - Watches/index.html" target="_blank">
-                            <div class="portfolio__img-box"><img class="portfolio__img"  src="tiny_pics_portfolios/Watch1.jpg" alt="project4"></div>
-                            <div class="portfolio__img-box"><img class="portfolio__img"  src="tiny_pics_portfolios/Watch2.jpg" alt="project4"></div>
-                            <div class="portfolio__img-box"><img class="portfolio__img"  src="tiny_pics_portfolios/Watch3.jpg" alt="project4"></div>
-                            <div class="portfolio__img-box"><img class="portfolio__img"  src="tiny_pics_portfolios/Watch4.jpg" alt="project4"></div></a>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/Watch1.jpg" alt="project4"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/Watch2.jpg" alt="project4"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/Watch3.jpg" alt="project4"></div>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/tiny_pics_portfolios/Watch4.jpg" alt="project4"></div></a>
                             <button class="portfolio__left-arrow">&lt;</button>
                             <button class="portfolio__right-arrow">&gt;</button>
                         </div>
                     
-                        <div class="portfolio__item-descr">
+                        <div class="portfolio__item-descr no-overflow">
                             <a class="portfolio__item-descr-link"  href="https://github.com/tatyanakoroleva00/portfolios/tree/7a1d0c0777d2ed181784e242da5a4c648f91bbd4/Templates%20practice/02.%20Template%20-%20Watches" target="_blank"><h5 class="portfolio__item-title">#1."Watches" (2022)</h5></a><br>
-                            <p>This template introduced me to a commercial website. </p>
+                            <p>This website template represented to me the vision of a commercial website. I have
+                                got acquainted with margins, several pages website, vertical and horizontal page viewing, repetitive sections.  </p>
                         </div>
 
                        
@@ -272,13 +296,16 @@
                 <div class="portfolio__gallery portfolio__gallery--pers-proj" id="personal-projects-gallery">
 
                     <div class="portfolio__gallery-item proj">
-                        <div class="portfolio__item pers-proj-col1"><a href="../2. Online store - portfolio/index.html" target="_blank">
+                        <div class="portfolio__item pers-proj-col1"><a href="../2. Online store - portfolio/index.php" target="_blank">
                             <div class="portfolio__img-box"><img class="portfolio__img" src="page_site/online_store.jpg" alt="online store"></div></a>
                             
                         </div>
                         <div class="portfolio__item-descr">
-                            <a class="portfolio__item-descr-link"  href="../2. Online store - portfolio/index.html" target="_blank"><h5 class="portfolio__item-title">#1."Domium Solatium" (2023)</h5></a><br>
-                            <p>This is my first invented portfolio Online Store. Here, I wanted to show my knowledge of FrontEnd and BackEnd all together.  </p>
+                            <a class="portfolio__item-descr-link"  href="../2. Online store - portfolio/index.php" target="_blank"><h5 class="portfolio__item-title">#1."Domium Solatium" (2023)</h5></a><br>
+                            <p>This is my first invented portfolio Online Store. Here, I wanted to show my knowledge of FrontEnd and BackEnd all together.
+                                What was new for me: small icons in nav menu, design creation for the shop, best solutions finding for transparent buttons
+                                (colors, fonts, arrows). Search bar, shopping cart, favourites, login / registration icons.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -288,36 +315,30 @@
         <div class="container">
             <h3 class="title blog__title">. BLOG</h3>
             <section class="blog__items">
+                <?php foreach ($posts as $post):?>
                 <div class="blog__item">
-                    <img class="blog__item-image" src="img/pic1.jpg" alt="IT domain3">
-                    <p class="blog__item-date">13 May 2023</p>
-                    <h4 class="blog__item-title">POST #3</h4>
-                    <p class="blog__item-text">Happy and fruitful Saturday, because I've created several sliders for my website, linked buttons and texts together, made up some new designs in my head to realize them in the future... <a class="blog__item-read-more" target="_blank"  href="pages/blog.html">Read more -></a></p>
+                    <img class="blog__item-image" src="<?= $post['image']?>" alt="IT domain3">
+                    <?php $a = $post['add_date'];
+                    $date = date("d-M-Y", strtotime($a));
+                    $date_modified = str_replace("-", " ", $date);
+                    ?>
+
+                    <p class="blog__item-date"><?= $date_modified?></p>
+                    <h4 class="blog__item-title">POST #<?= $post['id']?></h4>
+                    <p class="blog__item-text"><?= $post['short_text']?>... <a class="blog__item-read-more" target="_blank"  href="pages/blog.php">Read more -></a></p>
                 </div>
-                <div class="blog__item">
-                    <img class="blog__item-image"  src="img/pic3.jpg" alt="IT domain2">
-                    <p class="blog__item-date">12 Mai 2023</p>
-                    <h4 class="blog__item-title">POST #2</h4>
-                    <p class="blog__item-text">Today, I've decided to edit my classes and id-s names so that to make my code more structural. I am on the way of learning how to write a clean code so that to be understandable and to understand others... <a class="blog__item-read-more" target="_blank" href="pages/blog.html">Read more -></a></p>
-                </div>
-                <div class="blog__item">
-                    <img class="blog__item-image"  src="img/pic2.jpg" alt="IT domain1">
-                    <p class="blog__item-date">11 Mai 2023</p>
-                    <h4 class="blog__item-title">POST #1</h4>
-                    <p class="blog__item-text">This is <strong>my first IT post</strong> that I've ever written in my entire life!
-                    What an incredible pleasure it is to do what you like and you love. Computers have always played...  <a class="blog__item-read-more" target="_blank" href="pages/blog.html">Read more -></a></p>
-                    
-                </div>
+                <?php endforeach;?>
             </section>
         </div>
     </section>
     <section class="contact" id="contact">
       <div class="container">
-        <h3  class="title contact__title">. CONTACT ME here <img class="contact__image" src="icons/inc-feather.png"></h3>
+        <h3  class="title contact__title">. CONTACT ME here <img class="contact__image" src="icons/inc-feather.png" alt="contact form"></h3>
         <form class="contact__form" action="" method="post">
-            <input class="contact__form-input" type="text" name="name" placeholder="Name" >
+            <input class="contact__form-input" type="text" name="name" placeholder="Name">
             <input class="contact__form-input" type="email" name="email" placeholder="Email address">
             <textarea class="contact__form-textarea" placeholder="Your Message" rows="10" style="resize: none;"></textarea>
+            <input type="hidden">
             <input class="contact__form-submit" type="submit" value="Send" onclick="location.href='mailto:tatyanakoroleva00@mail.ru'">
         </form>
       </div>
@@ -325,7 +346,7 @@
     <section class="footer">
         <div class="container">
             <div class="copyright">
-                <div>&nbsp;&#169;2023 ALL RIGHTS RESERVED</div>
+                <div>&nbsp;Copyright &#9400; 2023 TK. All Rights Reserved</div>
             </div>
         </div>
     </section>

@@ -17,6 +17,18 @@
     const text6 = document.querySelector('#text6');
 
 
+    const anchors = document.querySelectorAll('a[href*="#"]'); /*Работает в Google Chrome*/
+    for (let anchor of anchors) {
+        anchor.addEventListener("click", function(event) {
+            event.preventDefault();
+            const blockID = anchor.getAttribute('href');
+            document.querySelector('' + blockID).scrollIntoView({
+                behavior: "smooth", block: "start"
+            })
+            anchor.style.cursor = 'pointer';
+        })
+    }
+
 
     btn1.addEventListener('click', ()=> {
         text.forEach(textEl => {
