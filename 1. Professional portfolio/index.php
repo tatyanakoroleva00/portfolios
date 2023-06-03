@@ -21,7 +21,7 @@ $posts = Posts::getLimitedNumberOfPosts();
 </head>
 
 <body>
-    <section class="home-page" id="home">
+    <section class="home-page home-page--top" id="home">
         <header class="header">
             <div class="container">
                 <div class="header__nav-bar">
@@ -39,6 +39,8 @@ $posts = Posts::getLimitedNumberOfPosts();
                 </div>
             </div>
         </header>
+    </section>
+    <section class="home-page">
         <div class="home-page__content-wrap">
             <div class="container">
                 <aside class="home-page__left-decor"></aside>

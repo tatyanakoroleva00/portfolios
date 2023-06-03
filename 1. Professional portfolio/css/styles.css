@@ -15,7 +15,14 @@
 }
 
 html {
-  font-size: 58%;
+  font-size: 60%;
+  background-color: rgb(22, 23, 30);
+  /*background-image: url('../img/back1.avif');*/
+  /*background-position: left -50% top -10%;*/
+  /*background-size: 100%;*/
+  /*background-size: 100%;*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
 }
 
 body,
@@ -49,10 +56,12 @@ a {
 
 body {
   box-sizing: border-box;
-  /*background-color: rgb(22, 23, 30);*/
-  /*background-image: url('img/fon.gif');*/
-  background-image:url('img/1.jpg');
-  background-repeat:repeat;
+  /*background-color: rgba(184, 81, 81, 0.1);*/
+  background-image: url("../img/cover1.jpg");
+  background-attachment: fixed;
+  background-position: top 80% right 40%;
+  background-size: 140%;
+  /*background-repeat: no-repeat;*/
   color: rgba(255, 255, 255, 0.812);
   font-family: 'Comic Neue', sans-serif;
   /* font-family: 'Open Sans', sans-serif; */
@@ -67,6 +76,10 @@ body {
   margin: 0 auto;
   background-color: rgb(28, 29, 37);
   padding-bottom: 10rem;
+}
+.home-page--top {
+  margin-bottom: 1rem;
+  padding-bottom: 0rem;
 }
 .header {
   max-width: 170rem;
@@ -141,7 +154,6 @@ body {
   height: 3.6rem;
   margin-bottom: -1rem;
 }
-
 /********************LEFT and RIGHT FIELDS**********/
 .home-page__content-wrap{
   position: relative;
@@ -549,7 +561,7 @@ body {
   color: #b4b4c5;
   box-sizing: border-box;
   width: 40rem;
-  height: 30rem;
+  height: 25rem;
   padding-left: 2rem;
   padding-right: 4rem;
   overflow: hidden;
@@ -666,6 +678,7 @@ body {
   background-color: rgb(28, 29, 37);
   padding-top: 10rem;
   padding-bottom: 10rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
 }
 .contact__form {
   width: 70rem;
@@ -694,8 +707,9 @@ body {
 /******************************BOTTOM****************/
 .footer {
   max-width: 170rem;
-  margin: -2rem auto;
+  margin: 2rem auto 0 auto;
   background-color: rgb(22, 23, 30);
+  padding-top: 3rem;
   padding-bottom: 3rem;
   display: flex;
   font-size: 2rem;
