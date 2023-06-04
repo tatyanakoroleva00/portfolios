@@ -38,7 +38,7 @@ $posts = Posts::getAllPosts();
                                     ?>
                                     <h6 class="blog__item-date"><?= $date_modified?></h6></div>
                                 <div class="col2">
-                                    <img class="blog__item-image" src="../<?= $post['image']?>" alt="IT domain">
+                                    <img class="blog__item-image" src="../img/blog/<?= $post['image']?>" alt="IT domain">
                                 </div>
                                 <div class="col3">
                                     <p class="blog__item-descr" ><?= $post['full_text']?></p>

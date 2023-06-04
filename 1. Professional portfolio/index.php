@@ -319,7 +319,7 @@ $posts = Posts::getLimitedNumberOfPosts();
             <section class="blog__items">
                 <?php foreach ($posts as $post):?>
                 <div class="blog__item">
-                    <img class="blog__item-image" src="<?= $post['image']?>" alt="IT domain">
+                    <img class="blog__item-image" src="img/blog/<?= $post['image']?>" alt="IT domain">
                     <?php $a = $post['add_date'];
                     $date = date("d-M-Y", strtotime($a));
                     $date_modified = str_replace("-", " ", $date);
