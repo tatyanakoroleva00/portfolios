@@ -57,7 +57,7 @@ a {
 body {
   box-sizing: border-box;
   /*background-color: rgba(184, 81, 81, 0.1);*/
-  background-image: url("../img/cover1.jpg");
+  background-image: url("../img/cover.jpg");
   background-attachment: fixed;
   background-position: top 80% right 40%;
   background-size: 140%;
@@ -79,12 +79,13 @@ body {
 }
 .home-page--top {
   margin-bottom: 1rem;
-  padding-bottom: 0rem;
+  padding-bottom: 0;
 }
 .header {
   max-width: 170rem;
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
   font-family: 'Comic Neue', sans-serif;
+
 }
 .container {
   max-width: 150rem;
@@ -143,6 +144,7 @@ body {
   color: white;
 }
 .menu__link--alter-ego {
+  /*color: #ef3636;*/
   color: #ef3636;
   opacity: 0.9;
 }
@@ -194,8 +196,10 @@ body {
   margin-left: 1rem;
 }
 .subtitle {
-  color: rgb(72, 101, 206);
-  font-weight: 700;
+  /*color: rgb(72, 101, 206);*/
+  color: rgba(72, 101, 206, 0.9);
+  /*font-weight: 700;*/
+  font-weight: 600;
   font-size: 4rem;
 }
 .home-page__subtitle {
@@ -206,6 +210,7 @@ body {
   margin-left: 1.2rem;
   margin-bottom: 2.5rem;
   font-size: 2.5rem;
+  opacity: 0.9;
   /* font-family: 'Open Sans', sans-serif; */
 }
 
@@ -228,6 +233,7 @@ body {
   font-size: 1.4rem;
   font-weight: bold;
   color: white;
+  /*opacity: 0.9;*/
   opacity: 0.9;
 }
 .home-page__hire-btn:hover {
@@ -245,6 +251,7 @@ body {
   align-items: center;
   background-color: transparent;
   color: white;
+  opacity: 0.9;
 }
 
 .download-cv-btn__link {
@@ -271,6 +278,7 @@ body {
   width: 50rem;
   height: 65rem;
   margin-left: 18rem;
+   opacity: 0.93;
 } 
 
 
@@ -327,7 +335,7 @@ body {
 
 .bottom-arrow {
   position: absolute;
-  bottom: -10rem;
+  bottom: -5rem;
   right: -5rem;
   opacity: 0.7;
 }
@@ -712,6 +720,10 @@ body {
   left: 10%;
   z-index: 0;
   cursor: pointer;
+  opacity: 0.8;
+}
+.lamp:hover {
+  opacity: 1;
 }
 .light {
   content: '';
@@ -727,22 +739,31 @@ body {
 }
 
 .animation {
-  animation: mymove 6s;
-
+  animation: mymove;
+  animation-duration: 10s;
 }
 
+/*@keyframes mymove {*/
+/*  99% {*/
+/*    box-shadow: 1rem 2rem 3rem white;*/
+/*    width: 27rem;*/
+/*    height: 27rem;*/
+/*    left:12%;*/
+/*    transition-duration: 4s;*/
+/*  }*/
+/*}*/
+
 @keyframes mymove {
-  99% {
+  50% {
     box-shadow: 1rem 2rem 3rem white;
     width: 27rem;
     height: 27rem;
-    left:12%;
-    transition-duration: 4s;
+    left: 12%;
   }
 }
 .lamp-message {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.2rem;
   position: absolute;
   top: 20%;
   left: 20%;

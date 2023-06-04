@@ -1,5 +1,5 @@
 <?php
-require 'models/DBConnect.php';
+require 'DBConnect.php';
 
 
 class Posts {

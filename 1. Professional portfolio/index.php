@@ -32,7 +32,7 @@ $posts = Posts::getLimitedNumberOfPosts();
                             <li class="menu__list-item"><a class="menu__link" href="#about">ABOUT</a></li>
                             <li class="menu__list-item"><a class="menu__link" href="#portfolio">PORTFOLIO</a></li>
                             <li class="menu__list-item"><a class="menu__link" href="#blog">BLOG</a></li>
-                            <li class="menu__list-item"><a class="menu__link" href="mailto:tatyanakoroleva00@mail.ru"><img class="menu__send-email" src="img/mail.png" alt="mail me"></a></li>
+                            <li class="menu__list-item"><a class="menu__link" href="mailto:tatianakoroleva_work@mail.ru"><img class="menu__send-email" src="img/icons/mail.png" alt="mail me"></a></li>
                             <li class="menu__list-item"><a class="menu__link menu__link--alter-ego" href="../3.%20AlterEgo%20-%20personal%20site/index.html">ALTER EGO></a></li>
                         </ul>
                     </nav>
@@ -53,15 +53,15 @@ $posts = Posts::getLimitedNumberOfPosts();
                                 Fullstack Developer.</p>
                         </div>
                         <div class="home-page__buttons">
-                            <button class="hire-btn home-page__hire-btn" onclick="location.href='mailto:tatyanakoroleva00@mail.ru';">HIRE
+                            <button class="hire-btn home-page__hire-btn" onclick="location.href='mailto:tatianakoroleva_work@mail.ru'";">HIRE
                                 ME</button>
                             <button class="download-cv-btn home-page__download-cv-btn">
                                 <a class="download-cv-btn__link" href="CV/CV_Koroleva_ТА.pdf" download>DOWNLOAD CV</a>
-                                <img class="download-cv-btn__icon" src="img/download.png" alt="download cv">
+                                <img class="download-cv-btn__icon" src="img/icons/download.png" alt="download cv">
                             </button>
                         </div>
                         <div class="bottom-arrow">
-                            <a href="#about"><img src="img/arrow.png" alt="bottom arrow"></a>
+                            <a href="#about"><img src="img/icons/arrow.png" alt="bottom arrow"></a>
                         </div>
                     </div>
                     <div class="home-page__content--right-col">
@@ -73,11 +73,11 @@ $posts = Posts::getLimitedNumberOfPosts();
                     <div class="vertical-line"></div>
                     <div class="icons">
                         <a href="https://github.com/tatyanakoroleva00" target="_blank"><img id="github"
-                                src="img/github.png" alt="github"></a>
+                                                                                            src="img/icons/github.png" alt="github"></a>
                         <a href="https://www.linkedin.com/mwlite/in/tatianakoroleva" target="_blank"><img id="linkedin"
-                                src="img/linkedin.png" alt="linkedin"></a>
+                                                                                                          src="img/icons/linkedin.png" alt="linkedin"></a>
                         <a href="https://www.codewars.com/users/Tatiana%20Koroleva" target="_blank"><img id="codewars"
-                                src="img/codewars.png" alt="codewars"></a>
+                                                                                                         src="img/icons/codewars.png" alt="codewars"></a>
                     </div>
                 </aside>
             </div>
@@ -299,7 +299,7 @@ $posts = Posts::getLimitedNumberOfPosts();
 
                     <div class="portfolio__gallery-item proj">
                         <div class="portfolio__item pers-proj-col1"><a href="../2. Online store - portfolio/index.php" target="_blank">
-                            <div class="portfolio__img-box"><img class="portfolio__img" src="page_site/online_store.jpg" alt="online store"></div></a>
+                            <div class="portfolio__img-box"><img class="portfolio__img" src="img/page_site/online_store.jpg" alt="online store"></div></a>
                             
                         </div>
                         <div class="portfolio__item-descr">
@@ -319,7 +319,7 @@ $posts = Posts::getLimitedNumberOfPosts();
             <section class="blog__items">
                 <?php foreach ($posts as $post):?>
                 <div class="blog__item">
-                    <img class="blog__item-image" src="<?= $post['image']?>" alt="IT domain3">
+                    <img class="blog__item-image" src="<?= $post['image']?>" alt="IT domain">
                     <?php $a = $post['add_date'];
                     $date = date("d-M-Y", strtotime($a));
                     $date_modified = str_replace("-", " ", $date);
@@ -327,7 +327,7 @@ $posts = Posts::getLimitedNumberOfPosts();
 
                     <p class="blog__item-date"><?= $date_modified?></p>
                     <h4 class="blog__item-title">POST #<?= $post['id']?></h4>
-                    <p class="blog__item-text"><?= $post['short_text']?>... <a class="blog__item-read-more" target="_blank"  href="pages/blog.php">Read more -></a></p>
+                    <p class="blog__item-text"><?= $post['short_text']?>... <a class="blog__item-read-more" target="_blank"  href="pages/blog.php?=<?=$post['id']?>">Read more -></a></p>
                 </div>
                 <?php endforeach;?>
             </section>
@@ -335,13 +335,14 @@ $posts = Posts::getLimitedNumberOfPosts();
     </section>
     <section class="contact" id="contact">
       <div class="container">
-        <h3  class="title contact__title">. CONTACT ME here <img class="contact__image" src="icons/inc-feather.png" alt="contact form"></h3>
-        <form class="contact__form action="" method="post">
-            <input class="contact__form-input" type="text" name="name" placeholder="Name">
-            <input class="contact__form-input" type="email" name="email" placeholder="Email address">
-            <textarea class="contact__form-textarea" placeholder="Your Message" rows="10" style="resize: none;"></textarea>
+          <h3  class="title contact__title">. CONTACT ME </h3>
+<!--            here <img class="contact__image" src="img/icons/inc-feather.png" alt="contact form"></h3>-->
+          <form class="contact__form" action="mailto:tatianakoroleva_work@mail.ru" method="post" enctype="text/plain">
+            <input class="contact__form-input" name="Name: " type="text"  placeholder="Name" required>
+            <input class="contact__form-input" name="Email: : " type="email"  placeholder="Email address" required>
+            <textarea class="contact__form-textarea" name="Message:  " placeholder="Your Message" rows="10" style="resize: none;"  required></textarea>
             <input type="hidden">
-            <input class="contact__form-submit" type="submit" value="Send" onclick="location.href='mailto:tatyanakoroleva00@mail.ru'">
+            <input class="contact__form-submit" type="submit" value="Send">
         </form>
           <img class="lamp" src="img/1.png" alt="lamp">
           <div class="light" animation></div>
