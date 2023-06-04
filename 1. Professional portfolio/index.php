@@ -336,13 +336,16 @@ $posts = Posts::getLimitedNumberOfPosts();
     <section class="contact" id="contact">
       <div class="container">
         <h3  class="title contact__title">. CONTACT ME here <img class="contact__image" src="icons/inc-feather.png" alt="contact form"></h3>
-        <form class="contact__form" action="" method="post">
+        <form class="contact__form action="" method="post">
             <input class="contact__form-input" type="text" name="name" placeholder="Name">
             <input class="contact__form-input" type="email" name="email" placeholder="Email address">
             <textarea class="contact__form-textarea" placeholder="Your Message" rows="10" style="resize: none;"></textarea>
             <input type="hidden">
             <input class="contact__form-submit" type="submit" value="Send" onclick="location.href='mailto:tatyanakoroleva00@mail.ru'">
         </form>
+          <img class="lamp" src="img/1.png" alt="lamp">
+          <div class="light" animation></div>
+          <div class="lamp-message">You are most welcome to send me a message</div>
       </div>
     </section>
     <section class="footer">

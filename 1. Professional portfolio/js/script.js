@@ -16,6 +16,23 @@
     const text5 = document.querySelector('#text5');
     const text6 = document.querySelector('#text6');
 
+    const lamp = document.querySelector('.lamp');
+    const light = document.querySelector('.light');
+    const lampMessage = document.querySelector('.lamp-message');
+
+
+    function turnOnTheLight() {
+        lamp.addEventListener("click", (e) => {
+            e.preventDefault();
+            light.classList.remove('animation');
+            void light.offsetWidth;
+            light.classList.add('animation');
+
+        }, false);
+
+    }
+    turnOnTheLight();
+
 
     const anchors = document.querySelectorAll('a[href*="#"]'); /*Работает в Google Chrome*/
     for (let anchor of anchors) {
@@ -291,3 +308,4 @@ function slider3() {
         }
         }
         slider4();
+
