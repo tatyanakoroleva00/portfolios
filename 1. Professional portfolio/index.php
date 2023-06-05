@@ -17,6 +17,9 @@ $posts = Posts::getLimitedNumberOfPosts();
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap">
     <!-- <a target="_blank" href="https://icons8.com/icon/19044/downward-arrow">Downward Arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script defer src="js/script.js"></script>
     <script defer src="js/translation.js"></script>
 
@@ -39,7 +42,8 @@ $posts = Posts::getLimitedNumberOfPosts();
                             <li class="menu__list-item"><a class="menu__link menu__link--alter-ego lng-alter-ego" href="../3.%20AlterEgo%20-%20personal%20site/index.html">ALTER EGO></a></li>
                             <li class="menu__list-item"><select class="change-lang">
                                     <option class="rus-lang" value="ru">RU</option>
-                                    <option class="eng-lang" value="en" selected>EN</option></select></li>
+                                    <option class="eng-lang" value="en" selected>EN</option>
+                                    <option class="fr-lang" value="fr">FR</option></select></li>
                         </ul>
                     </nav>
                 </div>
@@ -61,8 +65,9 @@ $posts = Posts::getLimitedNumberOfPosts();
                         <div class="home-page__buttons">
                             <button class="hire-btn home-page__hire-btn lng-hire-btn" onclick="location.href='mailto:tatianakoroleva_work@mail.ru'">HIRE
                                 ME</button>
-                            <button class="download-cv-btn home-page__download-cv-btn lng-download-cv-btn">
-                                <a class="download-cv-btn__link" href="CV/CV_Koroleva_ТА.pdf" download>DOWNLOAD CV</a>
+
+                            <button class="download-cv-btn home-page__download-cv-btn">
+                                <a class="download-cv-btn__link lng-download-cv-btn" href="CV/CV_Koroleva_ТА.pdf" download>DOWNLOAD CV</a>
                                 <img class="download-cv-btn__icon" src="img/icons/download.png" alt="download cv">
                             </button>
                         </div>
@@ -91,32 +96,30 @@ $posts = Posts::getLimitedNumberOfPosts();
     </section>
     <section class="about" id="about">
         <div class="container">
-            <h3 class="title about__title">. ABOUT ME</h3>
+            <h3 class="title about__title lng-about__title">. ABOUT ME</h3>
             <section class="about__content">
                 <div class="about__skillbox">
                     <div class="about__skillbox-btns">
-                        <button id="btn1" class="about__skillbox-btn"><span>Education</span></button>
-                        <button id="btn2" class="about__skillbox-btn"><span>Work Experience</span></button>
-                        <button id="btn3" class="about__skillbox-btn"><span>Languages</span></button>
-                        <button id="btn4" class="about__skillbox-btn"><span>Computer Skills</span></button>
-                        <button id="btn5" class="about__skillbox-btn"><span>Soft Skills</span></button>
-                        <button id="btn6" class="about__skillbox-btn"><span>Certificates</span></button>
+                        <button id="btn1" class="about__skillbox-btn lng-education "><span>Education</span></button>
+                        <button id="btn2" class="about__skillbox-btn lng-work-experience"><span>Work Experience</span></button>
+                        <button id="btn3" class="about__skillbox-btn lng-languages"><span>Languages</span></button>
+                        <button id="btn4" class="about__skillbox-btn lng-computer-skills"><span>Computer Skills</span></button>
+                        <button id="btn5" class="about__skillbox-btn lng-soft-skills"><span>Soft Skills</span></button>
+                        <button id="btn6" class="about__skillbox-btn lng-certificates"><span>Certificates</span></button>
                     </div>
                     <div class="about__skillbox-descr">
                         <div id="text1" class="about__skillbox-text about__education">
                             <ul class="about__skillbox-list">
-                                <li class="about__skillbox-list-item"><span class="special-span">2023, FULLSTACK courses. (260hours) Center "Professional"</span>
-                                Moscow, Russia </li>
-                                <li class="about__skillbox-list-item" ><span>2015, M2 (MBA) “Business, European Management,
-                                        Languages”.</span><br>
+                                <li class="about__skillbox-list-item lng-education1-location"><span class="special-span lng-education1">2023, FULLSTACK courses. (260hours) Center "Professional" </span>
+                                Moscow, Russia. </li>
+                                <li class="about__skillbox-list-item lng-education2-location" ><span class="lng-education2">2015, M2 (MBA) “Business, European Management, Languages” </span><br>
                                     University of Orleans, France. </li>
-                                <li class="about__skillbox-list-item"><span>2011, Military Interpreter (lieutenant grade)
+                                <li class="about__skillbox-list-item lng-education3-location"><span class="lng-education3">2011, Military Interpreter (lieutenant grade)
                                         </span><br> Moscow State Linguistic University, Military department, Russia.</li>
-                                <li class="about__skillbox-list-item"><span>2009, M2 “Diplomacy, International
-                                        Relations”.</span><br> Moscow State
+                                <li class="about__skillbox-list-item lng-education4-location"><span class="lng-education4">2009, M2 “Diplomacy, International Relations” </span><br> Moscow State
                                     Linguistic University, Russia.</li>
 
-                                <li class="about__skillbox-list-item"><span>English Special School</span><br>Moscow, Russia</li>
+                                <li class="about__skillbox-list-item lng-education5-location"><span class="lng-education4">English Special School</span><br>Moscow, Russia</li>
                             </ul>
                         </div>
                         <div id="text2" class="about__skillbox-text about__work-experience">
