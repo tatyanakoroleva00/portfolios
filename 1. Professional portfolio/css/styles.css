@@ -113,7 +113,7 @@ body {
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .menu__list-item {
@@ -123,13 +123,12 @@ body {
   margin-left: 5rem;
   padding: 5rem 0;
 }
-.menu__link {
+.menu__link, .change-lang {
   color: white;
   opacity: 0.7;
   font-size: 2.5rem;
   font-weight: 700;
 }
-
 .logo__link {
   color: white;
   text-decoration: none;
@@ -154,6 +153,20 @@ body {
   filter: invert(1);
   height: 3.6rem;
   margin-bottom: -1rem;
+}
+.change-lang {
+  background: transparent;
+  border-radius: 5%;
+  font-size: 2.3rem;
+  cursor: pointer;
+  font-weight: lighter;
+  /*background-color: rgba(72, 101, 206, 0.9);*/
+  /*font-size: 2rem;*/
+}
+.rus-lang, .eng-lang {
+  color: black;
+  font-size: 2rem;
+  /*background-color: blue;*/
 }
 /********************LEFT and RIGHT FIELDS**********/
 .home-page__content-wrap{

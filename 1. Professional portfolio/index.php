@@ -12,12 +12,15 @@ $posts = Posts::getLimitedNumberOfPosts();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio website</title>
+    <title class="lng-title-name">TK - Portfolio website</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap">
     <!-- <a target="_blank" href="https://icons8.com/icon/19044/downward-arrow">Downward Arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
     <script defer src="js/script.js"></script>
+    <script defer src="js/translation.js"></script>
+
+
 </head>
 
 <body>
@@ -28,12 +31,15 @@ $posts = Posts::getLimitedNumberOfPosts();
                     <div class="logo"><a href="#about" style="color: white;"><p>TK</p></a></div>
                     <nav class="menu">
                         <ul class="menu__list">
-                            <li class="menu__list-item"><a class="menu__link menu__link--active" href="#">HOME</a></li>
-                            <li class="menu__list-item"><a class="menu__link" href="#about">ABOUT</a></li>
-                            <li class="menu__list-item"><a class="menu__link" href="#portfolio">PORTFOLIO</a></li>
-                            <li class="menu__list-item"><a class="menu__link" href="#blog">BLOG</a></li>
+                            <li class="menu__list-item"><a class="menu__link menu__link--active lng-home" href="#">HOME</a></li>
+                            <li class="menu__list-item"><a class="menu__link lng-about" href="#about">ABOUT</a></li>
+                            <li class="menu__list-item"><a class="menu__link lng-portfolio" href="#portfolio">PORTFOLIO</a></li>
+                            <li class="menu__list-item"><a class="menu__link lng-blog" href="#blog">BLOG</a></li>
                             <li class="menu__list-item"><a class="menu__link" href="mailto:tatianakoroleva_work@mail.ru"><img class="menu__send-email" src="img/icons/mail.png" alt="mail me"></a></li>
-                            <li class="menu__list-item"><a class="menu__link menu__link--alter-ego" href="../3.%20AlterEgo%20-%20personal%20site/index.html">ALTER EGO></a></li>
+                            <li class="menu__list-item"><a class="menu__link menu__link--alter-ego lng-alter-ego" href="../3.%20AlterEgo%20-%20personal%20site/index.html">ALTER EGO></a></li>
+                            <li class="menu__list-item"><select class="change-lang">
+                                    <option class="rus-lang" value="ru">RU</option>
+                                    <option class="eng-lang" value="en" selected>EN</option></select></li>
                         </ul>
                     </nav>
                 </div>
@@ -47,15 +53,15 @@ $posts = Posts::getLimitedNumberOfPosts();
                 <section class="home-page__content">
                     <div class="home-page__content--left-col">
                         <div class="home-page__items">
-                            <h1 class="title home-page__title">TATIANA KOROLEVA</h1>
-                            <h2 class="subtitle home-page__subtitle">Junior Fullstack Developer</h2>
-                            <p class="home-page__text"> Currently, I am looking for the employment opportunities in the IT field as a Junior
+                            <h1 class="title home-page__title lng-home-page__title">TATIANA KOROLEVA</h1>
+                            <h2 class="subtitle home-page__subtitle lng-home-page__subtitle">Junior Fullstack Developer</h2>
+                            <p class="home-page__text lng-home-page__text"> Currently, I am looking for the employment opportunities in the IT field as a Junior
                                 Fullstack Developer.</p>
                         </div>
                         <div class="home-page__buttons">
-                            <button class="hire-btn home-page__hire-btn" onclick="location.href='mailto:tatianakoroleva_work@mail.ru'";">HIRE
+                            <button class="hire-btn home-page__hire-btn lng-hire-btn" onclick="location.href='mailto:tatianakoroleva_work@mail.ru'">HIRE
                                 ME</button>
-                            <button class="download-cv-btn home-page__download-cv-btn">
+                            <button class="download-cv-btn home-page__download-cv-btn lng-download-cv-btn">
                                 <a class="download-cv-btn__link" href="CV/CV_Koroleva_ТА.pdf" download>DOWNLOAD CV</a>
                                 <img class="download-cv-btn__icon" src="img/icons/download.png" alt="download cv">
                             </button>
@@ -352,7 +358,7 @@ $posts = Posts::getLimitedNumberOfPosts();
     <section class="footer">
         <div class="container">
             <div class="copyright">
-                <div>&nbsp;Copyright &#9400; 2023 TK. All Rights Reserved</div>
+                <div>&nbsp;Copyright &#9400; <?= date('Y'); ?> TK. All Rights Reserved</div>
             </div>
         </div>
     </section>

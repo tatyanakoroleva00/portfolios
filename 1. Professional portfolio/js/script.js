@@ -21,6 +21,7 @@
     const lampMessage = document.querySelector('.lamp-message');
 
 
+
     function turnOnTheLight() {
         lamp.addEventListener("click", (e) => {
             e.preventDefault();
@@ -308,4 +309,6 @@ function slider3() {
         }
         }
         slider4();
+
+/*CHANGE LANGUAGE*/
 

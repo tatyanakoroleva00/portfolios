@@ -146,7 +146,7 @@
             </div>
         </section>
         <section class="footer-bottom-section">
-                <p><b>&#169; 2023 Domum Solatium. All Rights Reserved</b></p>
+                <p><b>&#169; <?= date('Y'); ?> Domum Solatium. All Rights Reserved</b></p>
         </section>
     </footer>
     
